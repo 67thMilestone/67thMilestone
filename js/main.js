@@ -10,8 +10,10 @@ var transitionAnimation = Barba.BaseTransition.extend({
 
     startTransition: function () {
         let deferred = Barba.Utils.deferred();
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
         var outTransition = new TimelineMax();
         outTransition
+            .to(window, 1, {scrollTo:0})
             .set(".color-wipe", { display: 'block', y: "0%" })
             .staggerFromTo(".color-wipe", 1, { width: "0%" }, {
                 width: "100%",

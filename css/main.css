@@ -28,13 +28,13 @@ nav a:hover {
 }
 
 .bgimage1 {
-    background: url("/img/morecows.jpg");
+    background: url("/assets/images/morecows.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .bgimage2 {
-    background: url("/img/cows-2.jpg");
+    background: url("/assets/images/cows-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
