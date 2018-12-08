@@ -1,5 +1,6 @@
 Barba.Pjax.start();
 Barba.Prefetch.init()
+let Elclass;
 
 var transitionAnimation1 = Barba.BaseTransition.extend({
     start: function () {
@@ -13,18 +14,17 @@ var transitionAnimation1 = Barba.BaseTransition.extend({
         $('html,body').animate({ scrollTop: 0 }, 'slow');
         var outTransition = new TimelineMax();
         outTransition
-            .to(window, 1, {scrollTo:0})
+            //.to(window, 1, {scrollTo:0})
             .set(".color-wipe", { display: 'block', y: "0%" })
             .staggerFromTo(".color-wipe", 1, { width: "0%" }, {
                 width: "100%",
                 ease: Power3.easeOut,
                 onComplete: () => { deferred.resolve(); }
-            }, 0.1,);
+            }, 0.1);
         return deferred.promise;
     },
 
     fadeIn: function () {
-        $(window).scrollTop(0);
         var _this = this;
         var $el = $(this.newContainer);
         var outTransition = new TimelineMax();
@@ -38,7 +38,7 @@ var transitionAnimation1 = Barba.BaseTransition.extend({
                 onComplete: function () {
                     _this.done();
                 }
-            },"-=0.4");
+            }, "-=0.4");
     }
 });
 
@@ -54,7 +54,9 @@ var transitionAnimation2 = Barba.BaseTransition.extend({
         $('html,body').animate({ scrollTop: 0 }, 'slow');
         var outTransition = new TimelineMax();
         outTransition
-            .to(document.body, 1, {scrollTo: 0,});
+            //.to(document.body, 1, {scrollTo: 0,})
+            .set(".Wipe", { display: 'block', y: "-100%" })
+            .to(".Wipe", 2, { y: "0%", ease: Power3.easeOut, onComplete: () => { deferred.resolve(); } })
         return deferred.promise;
     },
 
@@ -63,23 +65,27 @@ var transitionAnimation2 = Barba.BaseTransition.extend({
         var $el = $(this.newContainer);
         var outTransition = new TimelineMax();
         outTransition
-            //.set($(this.oldContainer), { display: "none", delay: 0.5 })
+            .set($(this.oldContainer), { display: "none", delay: 0.2 })
             .set($el, { visibility: "visible", opacity: 0 })
-            .fromTo($el, 0.7, {
-                onComplete: function () {
+            .to(".Wipe", 3, { y: "100%", ease: Power1.easeOut, })
+            .to($el, 1, {
+                opacity: 1,
+                onStart: function () {
                     _this.done();
                 }
-            },"-=0.4");
+            }, "-=2")
+            .set(".Wipe", { display: 'none' });
     }
 });
 
+Barba.Dispatcher.on('linkClicked', function (HTMLElement, MouseEvent) {
+    Elclass = $(HTMLElement).attr('class');
+    console.log("inside " + Elclass)
+});
+
 Barba.Pjax.getTransition = function () {
-    let Elclass="";
-    Barba.Dispatcher.on('linkClicked', function(HTMLElement, MouseEvent) {
-        let $el = $(HTMLElement);
-        Elclass = $el.attr('class');
-    });
-    if(Elclass=="t1")
+    console.log("outside " + Elclass)
+    if (Elclass == "t1")
         return transitionAnimation1;
     return transitionAnimation2;
 };
