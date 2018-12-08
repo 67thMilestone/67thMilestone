@@ -55,8 +55,7 @@ var transitionAnimation2 = Barba.BaseTransition.extend({
         var outTransition = new TimelineMax();
         outTransition
             //.to(document.body, 1, {scrollTo: 0,})
-            .set(".Wipe", { display: 'block', y: "-100%" })
-            .to(".Wipe", 2, { y: "0%", ease: Power3.easeOut, onComplete: () => { deferred.resolve(); } })
+            .set(".Wipe", { display: 'block', y: "-100%", onComplete: () => { deferred.resolve(); } })
         return deferred.promise;
     },
 
@@ -65,15 +64,16 @@ var transitionAnimation2 = Barba.BaseTransition.extend({
         var $el = $(this.newContainer);
         var outTransition = new TimelineMax();
         outTransition
-            .set($(this.oldContainer), { display: "none", delay: 0.2 })
-            .set($el, { visibility: "visible", opacity: 0 })
-            .to(".Wipe", 3, { y: "100%", ease: Power1.easeOut, })
+            .to(".Wipe", 1, { y: "0%", ease: Power3.easeIn, delay:"0.2" })
+            .set($(this.oldContainer), { display: "none" },"-=0.1")
+            .set($el, { visibility: "visible", opacity: 0 },"-=0.1")
+            .to(".Wipe", 1, { y: "105%", ease: Sine.easeOut, })
             .to($el, 1, {
                 opacity: 1,
                 onStart: function () {
                     _this.done();
                 }
-            }, "-=2")
+            }, "-=0.7")
             .set(".Wipe", { display: 'none' });
     }
 });

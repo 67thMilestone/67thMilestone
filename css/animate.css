@@ -4,7 +4,7 @@ body {
 
 .Wipe {
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
     display: none;
     position: fixed;
     z-index: 6;
