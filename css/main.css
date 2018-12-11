@@ -7,6 +7,11 @@ body {
   background-color: var(--cream-color);
 }
 
+* {
+  margin: 0;
+  backface-visibility: hidden;
+}
+
 .cream-backgroundColor {
   background-color: var(--cream-color);
 }
@@ -17,14 +22,40 @@ body {
 
 .scrollIcon {
 }
-.otherEvents--link {
-}
-.registerNow--link {
-}
+
 .hamburger-menu {
+  height: 10vh;
+  width: 80vw;
+  position: fixed;
+  display: grid;
+  left: 10vw;
+  background-color: var(--cream-color);
+  grid-template-columns: 1fr 1fr;
+  z-index: 100;
 }
+
+.hamburger-menu .hamburger-icon {
+  align-self: center;
+  justify-self: left;
+  width: 30px;
+  height: auto;
+}
+
+.registerNow--link {
+  align-self: center;
+  justify-self: end;
+  font-family: neueHaasUnicaMedium;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.registerNow--link hr {
+  border-bottom: solid 1px #000000;
+}
+
 .menuItem {
 }
+
 .listItem {
   font-family: neueHaasUnicaMedium;
   font-size: 8vw;
@@ -36,18 +67,20 @@ body {
   width: 80vw;
   position: relative;
   left: 10vw;
-  min-height: 100vh;
+  min-height: 200vh;
 }
 
-.fixed--email,
+.fixed--emailLink,
 .fixed--variableLink {
   position: fixed;
-  font-family: neueHaasUnicaMedium;
-  text-transform: uppercase;
-  transform: rotate(-90deg);
+  height: auto;
+  width: 3vw;
+  right: 3vw;
 }
 
 .fixed--variableLink {
+  bottom: 9vh;
 }
 .fixed--emailLink {
+  top: 25vh;
 }
