@@ -1,0 +1,53 @@
+:root {
+  --cream-color: var(#fffcf8);
+}
+
+body {
+  margin: 0;
+  background-color: var(--cream-color);
+}
+
+.cream-backgroundColor {
+  background-color: var(--cream-color);
+}
+
+.cream-textColor {
+  color: var(--cream-color);
+}
+
+.scrollIcon {
+}
+.otherEvents--link {
+}
+.registerNow--link {
+}
+.hamburger-menu {
+}
+.menuItem {
+}
+.listItem {
+  font-family: neueHaasUnicaMedium;
+  font-size: 8vw;
+  text-transform: uppercase;
+}
+
+/* main wrapper for every page */
+.wrapper {
+  width: 80vw;
+  position: relative;
+  left: 10vw;
+  min-height: 100vh;
+}
+
+.fixed--email,
+.fixed--variableLink {
+  position: fixed;
+  font-family: neueHaasUnicaMedium;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+}
+
+.fixed--variableLink {
+}
+.fixed--emailLink {
+}
