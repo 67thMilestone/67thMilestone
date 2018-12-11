@@ -1,0 +1,37 @@
+@font-face{
+    font-family: playfairBold;
+    src: url('/Fonts/PlayfairDisplay-Bold.ttf')
+}
+@font-face{
+    font-family: playfairBlack;
+    src: url('/Fonts/PlayfairDisplay-Black.ttf')
+}
+@font-face{
+    font-family: playfairRegular;
+    src: url('/Fonts/PlayfairDisplay-Regular.ttf')
+}
+
+@font-face{
+    font-family: neueHaasUnicaRegular;
+    src: url('/Fonts/NeueHaasUnicaPro-Regular.ttf')
+}
+
+@font-face{
+    font-family: neueHaasUnicaBold;
+    src: url('/Fonts/NeueHaasUnicaPro-Bold.ttf')
+}
+
+@font-face{
+    font-family: neueHaasUnicaHeavy;
+    src: url('/Fonts/NeueHaasUnicaPro-Heavy.ttf')
+}
+
+@font-face{
+    font-family: neueHaasUnicaMedium;
+    src: url('/Fonts/NeueHaasUnicaPro-Medium.ttf')
+}
+
+@font-face{
+    font-family: neueHaasUnicaBlack;
+    src: url('/Fonts/NeueHaasUnicaPro-Black.ttf')
+}
