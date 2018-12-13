@@ -1,0 +1,86 @@
+:root {
+  --cream-color: var(#fffcf8);
+}
+
+body {
+  margin: 0;
+  background-color: var(--cream-color);
+}
+
+* {
+  margin: 0;
+  backface-visibility: hidden;
+}
+
+.cream-backgroundColor {
+  background-color: var(--cream-color);
+}
+
+.cream-textColor {
+  color: var(--cream-color);
+}
+
+.scrollIcon {
+}
+
+.hamburger-menu {
+  height: 10vh;
+  width: 80vw;
+  position: fixed;
+  display: grid;
+  left: 10vw;
+  background-color: var(--cream-color);
+  grid-template-columns: 1fr 1fr;
+  z-index: 100;
+}
+
+.hamburger-menu .hamburger-icon {
+  align-self: center;
+  justify-self: left;
+  width: 30px;
+  height: auto;
+}
+
+.registerNow--link {
+  align-self: center;
+  justify-self: end;
+  font-family: neueHaasUnicaMedium;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.registerNow--link hr {
+  border-bottom: solid 1px #000000;
+}
+
+.menuItem {
+}
+
+.listItem {
+  font-family: neueHaasUnicaMedium;
+  font-size: 8vw;
+  text-transform: uppercase;
+}
+
+/* main wrapper for every page */
+.wrapper {
+  width: 80vw;
+  position: relative;
+  left: 10vw;
+  min-height: 200vh;
+}
+
+.fixed--emailLink,
+.fixed--variableLink {
+  position: fixed;
+  height: auto;
+  width: 3vw;
+  right: 3vw;
+}
+
+.fixed--variableLink {
+  bottom: 9vh;
+}
+.fixed--emailLink {
+  top: 25vh;
+}

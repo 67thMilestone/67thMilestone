@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #111;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Group_20" data-name="Group 20" transform="translate(-35 -33)">
+    <g id="Hamburger_Menu_symbol" data-name="Hamburger Menu symbol">
+      <line id="Line_15" data-name="Line 15" class="cls-1" x2="29" transform="translate(36 34)"/>
+      <line id="Line_16" data-name="Line 16" class="cls-1" x2="19" transform="translate(36 40)"/>
+      <line id="Line_17" data-name="Line 17" class="cls-1" x2="26" transform="translate(36 46)"/>
+    </g>
+  </g>
+</svg>
