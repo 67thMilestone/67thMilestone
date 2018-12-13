@@ -82,25 +82,22 @@ nav a:hover {
     color: aqua;
 }
 
-.beautifulQuestions {
-    position: relative;
-    display: inline-block;
+.textAnimation2 {
     overflow: hidden;
 }
 
-.beautifulQuestions .letter {
+.textAnimation4 .letter {
     display: inline-block;
-    line-height: 1em;
-    transform: translateZ(0em);
 }
 
-.coffeeMornings .letter {
-    transform-origin: 50% 100%;
+.textAnimation5 .letter {
     display: inline-block;
-    line-height: 1em;
 }
 
-.coffeeMornings {
-    position: relative;
+.textAnimation2 .letter {
+    display: inline-block;
+}
+
+.textAnimation3 .letter {
     display: inline-block;
 }

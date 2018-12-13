@@ -101,12 +101,11 @@ function splitLetters($var) {
 splitLetters($('.animateText'));
 
 function animateText() {
-    TweenMax.staggerFromTo('.greatThinkers .letter', 2.25, { opacity: 0 }, { opacity: 1, ease: Power4.easeInOut }, 0.15);
-    TweenMax.staggerFromTo('.beautifulQuestions .letter', 0.75, { css: { transform: 'translateY(1.1em)' } }, { css: { transform: 'translateY(0em)' } }, 0.05);
-    TweenMax.staggerFromTo('.realityBroken .letter', 2.25, { y: "1.15em", x: "0.55em", rotateZ: 180 }, { y: "0", x: "0", rotateZ: 0, ease: Expo.easeOut }, 0.05);
-    TweenMax.staggerFromTo('.coffeeMornings .letter', 1.5, { css: { transform: 'scale(0)' } }, { css: { transform: 'scale(1)' }, ease: Elastic.easeOut.config(1, 0.3) }, 0.045);
-    TweenMax.staggerFromTo('.newProductions .letter', 1.2, { x: '40%', opacity: 0 }, { x: "0%", opacity: 1, ease: Expo.easeOut }, 0.5);
-    TweenMax.staggerFromTo('.madeWithLove .letter', 0.75, { y: '-100%' }, { y: '0%', ease: Expo.easeOut }, 0.05);
+    TweenMax.staggerFromTo('.textAnimation1 .letter', 2.25, { opacity: 0 }, { opacity: 1, ease: Power4.easeInOut }, 0.15);
+    TweenMax.staggerFromTo('.textAnimation2 .letter', 0.75, { css: { transform: 'translateY(-100px)' } }, { css: { transform: 'translateY(0px)' }, ease: Expo.easeOut }, 0.05);
+    TweenMax.staggerFromTo('.textAnimation3 .letter', 1.4, { css: { transform: 'translateY(100px) translateZ(0)', opacity: 0 } }, { css: { transform: 'translateY(0px) translateZ(0)', opacity: 1 }, delay: 0.3 , ease: Expo.easeOut}, 0.045);
+    TweenMax.staggerFromTo('.textAnimation4 .letter', 1.5, { css: { transform: 'scale(0)' } }, { css: { transform: 'scale(1)' }, ease: Elastic.easeOut.config(1, 0.3) }, 0.045);
+    TweenMax.staggerFromTo('.textAnimation5 .letter', 1.2, { css: { transform: 'translateX(40px) translateZ(0)', opacity: 0 } }, { css: { transform: 'translateX(0px) translateZ(0)', opacity: 1 }, ease: Expo.easeOut, delay: 0.5 }, 0.04);
 }
 
 setInterval(animateText, 5000);
