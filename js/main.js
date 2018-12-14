@@ -1,16 +1,20 @@
 $(document).ready(function () {
     Barba.Pjax.start();
     Barba.Prefetch.init();
-    let Elclass;
+    let Elclass;  //stores the class of link clicked for transition
 
-    let options = {
-        damping: 0.04,
+    //options for smooth scrollbar
+    let options = {  
+        damping: 0.03,
         thumbMinSize: 20,
-        continuousScrolling: false
+        continuousScrolling: false,
+        alwaysShowTracks: false
     };
+    
     let Scrollbar = window.Scrollbar;
-    Scrollbar.init(document.querySelector('body'), options);
+    Scrollbar.init(document.querySelector('#scroller'), options); //initializing smooth scrollbar
 
+    //five wipes transition
     var transitionAnimation1 = Barba.BaseTransition.extend({
         start: function () {
             Promise
@@ -51,6 +55,7 @@ $(document).ready(function () {
         }
     });
 
+    //single wipes transition
     var transitionAnimation2 = Barba.BaseTransition.extend({
         start: function () {
             Promise
@@ -87,17 +92,19 @@ $(document).ready(function () {
         }
     });
 
+    //storing class of link clicked for transition to show different transition based on link clicked
     Barba.Dispatcher.on('linkClicked', function (HTMLElement, MouseEvent) {
         Elclass = $(HTMLElement).attr('class');
-        console.log("inside " + Elclass)
     });
 
+    //returns transition to be used
     Barba.Pjax.getTransition = function () {
-        console.log("outside " + Elclass)
         if (Elclass == "t1")
             return transitionAnimation1;
         return transitionAnimation2;
     };
+
+    //function to split a words into individual letters for applying animations
     function splitLetters($var) {
         $($var).each(function () {
             $(this).html(
@@ -109,14 +116,17 @@ $(document).ready(function () {
     }
     splitLetters($('.animateText'));
 
+    //tweens for text animations
     let textAnimation1 = TweenMax.staggerFromTo('.textAnimation1 .letter', 2.25, { opacity: 0 }, { opacity: 1, ease: Power4.easeInOut }, 0.15);
     let textAnimation2 = TweenMax.staggerFromTo('.textAnimation2 .letter', 0.75, { css: { transform: 'translateY(-100px)' } }, { css: { transform: 'translateY(0px)' }, ease: Expo.easeOut }, 0.05);
     let textAnimation3 = TweenMax.staggerFromTo('.textAnimation3 .letter', 1.4, { css: { transform: 'translateY(100px) translateZ(0)', opacity: 0 } }, { css: { transform: 'translateY(0px) translateZ(0)', opacity: 1 }, delay: 0.3, ease: Expo.easeOut }, 0.045);
     let textAnimation4 = TweenMax.staggerFromTo('.textAnimation4 .letter', 1.5, { css: { transform: 'scale(0)' } }, { css: { transform: 'scale(1)' }, ease: Elastic.easeOut.config(1, 0.3) }, 0.045);
     let textAnimation5 = TweenMax.staggerFromTo('.textAnimation5 .letter', 1.2, { css: { transform: 'translateX(40px) translateZ(0)', opacity: 0 } }, { css: { transform: 'translateX(0px) translateZ(0)', opacity: 1 }, ease: Expo.easeOut, delay: 0.5 }, 0.04);
 
+    //creating a ScrollMagic.Controller instance
     let controller = new ScrollMagic.Controller();
 
+    //adding scroll triggered text animations
     var scene = new ScrollMagic.Scene({
         triggerElement: ".textAnimation1",
         triggerHook: 1
@@ -147,6 +157,4 @@ $(document).ready(function () {
     })
     .setTween(textAnimation5) // trigger a TweenMax.to tween
     .addTo(controller);
-
-    //setInterval(animateText, 5000);
 });
