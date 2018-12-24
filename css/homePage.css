@@ -1,2 +1,29 @@
 .homePage--introImage {
 }
+
+body {
+  background: #000000;
+  margin: 0;
+}
+
+.homePage--topleft-text {
+  font-family: neueHaasUnicaBold;
+  font-size: 9px;
+  color: #ffffff;
+  margin-left: 3vw;
+  margin-top: 5vw;
+}
+
+.homePage--bottomleft-text-about {
+  font-family: neueHaasUnicaBold;
+  font-size: 9px;
+  color: #ffffff;
+  margin-left: 3vw;
+}
+
+.homePage--bottomleft-text-others {
+  font-family: neueHaasUnicaBold;
+  font-size: 9px;
+  color: #767676;
+  margin-left: 3vw;
+}
