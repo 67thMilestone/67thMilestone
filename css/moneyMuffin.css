@@ -5,7 +5,7 @@ body {
 
 .moneyMuffin--topleft-text {
   font-family: neueHaasUnicaBold;
-  font-size: 17px;
+  font-size: 15px;
   margin-left: 3vw;
   top: 5vh;
   height: 20vh;
@@ -52,7 +52,7 @@ body {
   font-family: neueHaasUnicaRegular;
   font-size: 25px;
   margin-left: 27vw;
-  margin-right: 30vw;
+  margin-right: 27vw;
   height: auto;
   position: relative;
   bottom: 20vh;
@@ -82,8 +82,7 @@ body {
 }
 
 hr {
-  border-color: #383535;
-  border-bottom: 0;
+  border-color: #000000;
 }
 
 .moneyMuffin-67milestonePartners {
