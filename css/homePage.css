@@ -8,7 +8,7 @@ body {
 
 .homePage--topleft-text {
   font-family: neueHaasUnicaBold;
-  font-size: 15px;
+  font-size: 17px;
   margin-left: 3vw;
   top: 5vh;
   color: #ffffff;
@@ -21,7 +21,7 @@ body {
 .homePage--bottomleft-text-about {
   font-family: neueHaasUnicaBold;
 
-  font-size: 15px;
+  font-size: 17px;
 
   color: #ffffff;
   text-transform: uppercase;
@@ -31,7 +31,7 @@ body {
 
 .homePage--bottomleft-text-others {
   font-family: neueHaasUnicaBold;
-  font-size: 15px;
+  font-size: 17px;
   height: 20vh;
   width: 20vw;
   color: #808080;
