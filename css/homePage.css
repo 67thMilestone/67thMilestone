@@ -1,3 +1,27 @@
+.homePage--introImage {
+  margin-left: 27vw;
+  position: relative;
+  width : 100%;
+  height: auto;
+}
+.heading-below-image{
+  font-family: neueHaasUnicaRegular;
+  font-size: 28px;
+  margin-left: 27vw;
+  text-transform: uppercase;
+  position: relative;
+  display : grid;
+}
+
+
+.description{
+  font-family: neueHaasUnicaRegular;
+  font-size: 13px;
+  margin-left: 27vw;
+  position: relative;
+  display : inline-block;
+}
+
 body {
   background: #000000;
   margin: 0;
@@ -10,20 +34,16 @@ body {
   top: 5vh;
   color: #ffffff;
   height: 20vh;
-  width: 20vw;
   text-transform: uppercase;
   position: relative;
 }
 
 .homePage--bottomleft-text-about {
   font-family: neueHaasUnicaBold;
-
   font-size: 15px;
-
   color: #ffffff;
   text-transform: uppercase;
   position: relative;
-  top: 28vh;
 }
 
 .homePage--bottomleft-text-others {
@@ -32,10 +52,8 @@ body {
   height: 20vh;
   width: 20vw;
   color: #808080;
-
   text-transform: uppercase;
   position: relative;
-  top: 28vh;
 }
 
 hr {
