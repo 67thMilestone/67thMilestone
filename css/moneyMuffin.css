@@ -5,50 +5,126 @@ body {
 
 .moneyMuffin--topleft-text {
   font-family: neueHaasUnicaBold;
-  font-size: 9px;
+  font-size: 4px;
   margin-left: 3vw;
-  margin-top: 5vw;
-  height: 20vw;
+  top: 5vh;
+  height: 20vh;
   width: 20vw;
   text-transform: uppercase;
+  position: relative;
 }
 
 .moneyMuffin--bottomleft-text-about {
   font-family: neueHaasUnicaBold;
-  width: 20vw;
-  font-size: 9px;
+
+  font-size: 4px;
   margin-left: 3vw;
   text-transform: uppercase;
+  position: relative;
+  top: 28vh;
 }
 
 .moneyMuffin--bottomleft-text-others {
   font-family: neueHaasUnicaBold;
-  font-size: 9px;
-  height: 20vw;
+  font-size: 4px;
+  height: 20vh;
   width: 20vw;
   color: #808080;
   margin-left: 3vw;
   text-transform: uppercase;
+  position: relative;
+  top: 28vh;
 }
 
 .moneyMuffin-heading {
   font-family: neueHaasUnicaBold;
-  font-size: 20px;
+  font-size: 11px;
   text-transform: uppercase;
-  margin-top: 25vw;
-  margin-left: 25vw;
+  bottom: 25vh;
+  margin-left: 27vw;
+  height: 2vh;
+  width: 100vw;
+  position: relative;
+  padding-bottom: 0px;
 }
 
 .moneyMuffin-description {
   font-family: neueHaasUnicaRegular;
-  font-size: 13px;
-  margin-left: 25vw;
-  margin-right: 20vw;
+  font-size: 5px;
+  margin-left: 27vw;
+  margin-right: 25vw;
+  height: auto;
+  position: relative;
+  bottom: 25vh;
+  padding-bottom: 10px;
 }
 
 .moneyMuffin-moreInformation {
   font-family: neueHaasUnicaRegular;
-  font-size: 8px;
-  margin-left: 25vw;
+  font-size: 3px;
+  margin-left: 27vw;
+  bottom: 23vh;
+  text-transform: uppercase;
+  color: #808080;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.moneyMuffin-foodPartner {
+  font-family: neueHaasUnicaBold;
+  font-size: 4px;
+  margin-left: 27vw;
+  height: 25vh;
+  bottom: 16vh;
+  text-transform: uppercase;
+  position: relative;
+}
+
+hr {
+  border-color: #383535;
+  border-bottom: 0;
+}
+
+.moneyMuffin-67milestonePartners {
+  font-family: neueHaasUnicaBold;
+  font-size: 11px;
+  text-transform: uppercase;
+  position: relative;
+
+  bottom: 3vh;
+  margin-left: 27vw;
+}
+
+.moneyMuffin--67milestonePartners-description {
+  font-family: neueHaasUnicaRegular;
+  font-size: 5px;
+  margin-left: 27vw;
+  margin-right: 30vw;
+  padding-bottom: 10vh;
+
+  bottom: 12vh;
+}
+
+.moneyMuffin--67milestonePartners-listofPartners {
+  font-family: neueHaasUnicaRegular;
+  font-size: 3px;
+  margin-left: 27vw;
   margin-right: 20vw;
+  text-transform: uppercase;
+  color: #808080;
+  height: 5vw;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 0vh;
+  padding-bottom: 10vh;
+}
+
+.moneyMuffin-67milestonePartners-2 {
+  font-family: neueHaasUnicaBold;
+  font-size: 4px;
+  position: relative;
+  text-transform: uppercase;
+  margin-left: 27vw;
+  height: 10vw;
+  bottom: 1vh;
 }
