@@ -73,33 +73,35 @@ hr {
 
   position: relative;
   bottom: 20vh;
-  padding-bottom: 7vh;
+  padding-bottom: 4vh;
+}
+
+.grid-container-milestoneList-text {
+  display: grid;
+  grid-gap: 50px;
 }
 
 .milestoneDescription-list1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
   font-family: neueHaasUnicaBold;
   font-size: 20px;
-  margin-left: 24vw;
-  margin-right: 27vw;
-  height: auto;
-  width: auto;
-
-  bottom: 10vh;
-  padding-bottom: 5vh;
+  margin-left: 25vw;
   text-transform: uppercase;
-  padding-right: 0;
+  position: relative;
+  padding-bottom: 15vw;
 }
 
 .milestoneDescription-list2 {
+  grid-column: 2 / span 3;
+  grid-row: 1;
   font-family: neueHaasUnicaBold;
   font-size: 20px;
-  margin-left: 54vw;
-  bottom: 105vh;
-  height: auto;
-  position: relative;
-  margin-top: 0vh;
-  padding-bottom: 5vh;
+  margin-left: 25vw;
   text-transform: uppercase;
+  position: relative;
+  padding-bottom: 15vw;
+  z-index: 2;
 }
 
 .milestoneDescription-Partner {
@@ -109,5 +111,5 @@ hr {
   text-transform: uppercase;
   margin-left: 27vw;
   height: 10vw;
-  bottom: 80vh;
+  bottom: 10vh;
 }
