@@ -3,18 +3,24 @@
   position: relative;
   max-width:100%;
   height: auto;
+  border: none;
 }
+
 .DJ-image {
   margin-left: 27vw;
   position: relative;
-  max-width: ;width : 100%;
+  max-width: 100%;
   height: auto;
+  border: none;
+
 }
+
 .band-image {
   margin-left: 27vw;
   position: relative;
-  max-width: ;width : 100%;
+  max-width:100%;
   height: auto;
+  border : none;
 }
 .description-below-band{
   font-family: neueHaasUnicaRegular;
@@ -22,11 +28,20 @@
   margin-left: 75vw;
   text-transform: uppercase;
   position: relative;
+  padding-bottom:10vw;
+}
+.description-below-abstract{
+  font-family: NeueHaasUnicaPro-Thin;
+  font-size: 18px;
+  margin-left: 27vw;
+  text-transform: none;
+  position: relative;
+  padding-bottom: 10vw;
 }
 
 .heading-below-image{
   font-family: NeueHaasUnicaPro-Heavy;
-  font-size: 30px;
+  font-size:45px;
   margin-left: 27vw;
   text-transform: uppercase;
   position: relative;
@@ -38,7 +53,7 @@
   margin-left: 27vw;
   text-transform: uppercase;
   position: relative;
-  padding-bottom: 20vh;
+  padding-bottom: 30vh;
 }
 
 .description-second{
@@ -98,11 +113,42 @@ hr {
   border-color: #ffffff;
   border-bottom: 0;
 }
-.second-heading{
+.year-heading{
   font-family: NeueHaasUnicaPro-Heavy;
-  font-size: 30px;
+  font-size: 45px;
   margin-left: 27vw;
   text-transform: uppercase;
   position: relative;
   font-weight: bold;
+}
+.abstract-image {
+  margin-left: 27vw;
+  position: relative;
+  max-width:100%;
+  height: auto;
+  border: none;
+}
+.grid-container-abstract-text {
+  display: grid;
+  grid-gap: 200px;
+}
+.year-heading-second {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  font-family: NeueHaasUnicaPro-Heavy;
+  font-size: 45px;
+  margin-left: 27vw;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: bold;
+}
+
+.description-above-abstract {
+  grid-column: 2 / span 3;
+  grid-row: 1;
+  font-family: neueHaasUnicaRegular;
+  font-size: 20px;
+  margin-left: 27vw;
+  text-transform: uppercase;
+  position: relative;
 }
