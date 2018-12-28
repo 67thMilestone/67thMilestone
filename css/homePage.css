@@ -184,6 +184,8 @@ hr {
   margin-left: 27vw;
   text-transform: uppercase;
   position: relative;
+  padding-bottom: 15vw;
+
 }
 .second-column-events{
   grid-column: 2 / span 3;
@@ -193,4 +195,15 @@ hr {
   margin-left: 27vw;
   text-transform: uppercase;
   position: relative;
+  padding-bottom: 15vw;
+  z-index: 2;
+}
+.local-train-image{
+  margin-left: 27vw;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  border: none;
+  padding-bottom: 15vw;
+
 }
