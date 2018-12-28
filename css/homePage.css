@@ -64,6 +64,16 @@
   position: relative;
 }
 
+.event-description{
+  font-family: NeueHaasUnicaPro-Light;
+  font-size: 18px;
+  margin-left: 27vw;
+  position: relative;
+  display : inline-block;
+  text-transform: none;
+  padding-bottom: 10vh;
+
+}
 .description{
   font-family: NeueHaasUnicaPro-Light;
   font-size: 15px;
@@ -121,6 +131,16 @@ hr {
   position: relative;
   font-weight: bold;
 }
+
+.event-heading{
+  font-family: NeueHaasUnicaPro-Heavy;
+  font-size: 45px;
+  margin-left: 27vw;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: bold;
+  padding-bottom: 2vw;
+}
 .abstract-image {
   margin-left: 27vw;
   position: relative;
@@ -144,6 +164,28 @@ hr {
 }
 
 .description-above-abstract {
+  grid-column: 2 / span 3;
+  grid-row: 1;
+  font-family: neueHaasUnicaRegular;
+  font-size: 20px;
+  margin-left: 27vw;
+  text-transform: uppercase;
+  position: relative;
+}
+.grid-container-event-text {
+  display: grid;
+  grid-gap: 200px;
+}
+.first-column-events{
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  font-family: neueHaasUnicaRegular;
+  font-size: 20px;
+  margin-left: 27vw;
+  text-transform: uppercase;
+  position: relative;
+}
+.second-column-events{
   grid-column: 2 / span 3;
   grid-row: 1;
   font-family: neueHaasUnicaRegular;
