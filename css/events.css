@@ -1,0 +1,123 @@
+body, .container-fluid {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  /* font-family: neueHaasUnicaBold; */
+}
+
+ul {
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.navbar{
+  text-transform: uppercase;
+}
+
+.topleft-text {
+  margin-left: 3vw;
+  top: 5vh;
+  height: 20vh;
+  width: 20vw;
+  color: white;
+  font-weight: 500;
+  position: fixed;
+}
+
+.topleft-text a{
+  color: white;
+  position: relative;
+}
+
+.topleft-text a:hover{
+  color: #808080;
+  text-decoration: none;
+}
+
+.bottomleft-text {
+  top: 5vh;
+  height: 20vh;
+  width: 20vw;
+  top: 50vh;
+  position: fixed;
+}
+
+.bottomleft-text a{
+  color: #808080;
+  position: relative;
+}
+
+.bottomleft-text a:hover{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+ }
+
+li .active{
+  color: white;
+  font-weight: bold;
+  text-decoration: underline 2px;
+}
+.heading, .head{
+  margin-left: 27vw;
+  margin-right: 20vw;
+  color: #ccc;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+
+.description, .list{
+  margin-left: 27vw;
+  margin-right: 20vw;
+  color: #ccc;
+  font-size: 20px;
+  position: relative;
+}
+
+.list a{
+  color: #ccc;
+}
+
+.list a:hover{
+  color: #ccc;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 601px) {
+  .topleft-text {
+    font-size: 15px;
+  }
+  .bottomleft-text{
+    font-size: 17px;
+  }
+  .heading, .head{
+    font-size: 50px;
+  }
+  .description, .list{
+    font-size: 22px;
+  }
+  .hide{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topleft-text {
+    font-size: 10px;
+  }
+
+  .bottomleft-text{
+    font-size: 12px;
+  }
+
+  .heading, .head{
+    font-size: 27px;
+  }
+  .description, .list{
+    font-size: 13px;
+  }
+  .hide{
+    font-size: 10px;
+  }
+}

@@ -14,14 +14,15 @@ body {
   position: relative;
 }
 
-.partnerRanges--bottomleft-text-about {
-  font-family: neueHaasUnicaBold;
-  color: #ffffff;
-  font-size: 17px;
-  margin-left: 3vw;
-  text-transform: uppercase;
+.partnerRanges--topleft-text a{
+  color: rgb(255, 255, 255);
   position: relative;
-  top: 20vh;
+  text-decoration: none;
+
+}
+
+.partnerRanges--topleft-text a:hover{
+  color: #808080;
 }
 
 .partnerRanges--bottomleft-text-others {
@@ -35,6 +36,19 @@ body {
   position: relative;
   top: 20vh;
 }
+
+.partnerRanges--bottomleft-text-others a{
+  color: #808080;
+  position: relative;
+  text-decoration: none;
+
+}
+
+.partnerRanges--bottomleft-text-others a:hover, .active{
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+ }
 
 .partnerRanges--bottomleftranges-text-signature {
   font-family: neueHaasUnicaBold;

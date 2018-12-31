@@ -1,5 +1,5 @@
 body {
-  background: #fffcf8;
+  background: #000000;
   margin: 0;
 }
 
@@ -9,19 +9,22 @@ body {
   margin-left: 3vw;
   top: 5vh;
   height: 20vh;
+  color: #fff;
   width: 20vw;
   text-transform: uppercase;
   position: relative;
 }
 
-.moneyMuffin--bottomleft-text-about {
-  font-family: neueHaasUnicaBold;
-
-  font-size: 17px;
-  margin-left: 3vw;
-  text-transform: uppercase;
+.moneyMuffin--topleft-text a{
+  color: rgb(255, 255, 255);
   position: relative;
-  top: 40vh;
+  text-decoration: none;
+
+}
+
+.moneyMuffin--topleft-text a:hover{
+  color: #808080;
+  text-decoration: none;
 }
 
 .moneyMuffin--bottomleft-text-others {
@@ -36,9 +39,23 @@ body {
   top: 40vh;
 }
 
+.moneyMuffin--bottomleft-text-others a{
+  color: #808080;
+  position: relative;
+  text-decoration: none;
+
+}
+
+.moneyMuffin--bottomleft-text-others a:hover, .active{
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+ }
+
 .moneyMuffin-heading {
   font-family: neueHaasUnicaBold;
   font-size: 40px;
+  color: #fff;
   text-transform: uppercase;
   bottom: 24vh;
   margin-left: 27vw;
@@ -55,6 +72,7 @@ body {
   margin-right: 27vw;
   height: auto;
   position: relative;
+  color: #fff;
   bottom: 20vh;
   padding-bottom: 15vh;
 }
@@ -74,6 +92,7 @@ body {
 .moneyMuffin-foodPartner {
   font-family: neueHaasUnicaBold;
   font-size: 20px;
+  color: #fff;
   margin-left: 27vw;
   height: 25vh;
   bottom: 16vh;
@@ -82,7 +101,7 @@ body {
 }
 
 hr {
-  border-color: #000000;
+  border-color: #ffffff;
   border-bottom: 0;
 }
 
@@ -90,7 +109,7 @@ hr {
   font-family: neueHaasUnicaBold;
   font-size: 40px;
   position: relative;
-
+  color: #fff;
   bottom: 3vh;
   margin-left: 27vw;
 }
@@ -101,7 +120,7 @@ hr {
   margin-left: 27vw;
   margin-right: 30vw;
   padding-bottom: 10vh;
-
+  color: #fff;
   bottom: 12vh;
 }
 
@@ -124,6 +143,7 @@ hr {
   font-size: 20px;
   position: relative;
   text-transform: uppercase;
+  color: #fff;
   margin-left: 27vw;
   height: 10vw;
   bottom: 1vh;
