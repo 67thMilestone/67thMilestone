@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>67th Milestone Stary Nights</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/extra.css" />
+  <link rel="stylesheet" href="css/hover.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.3.1/smooth-scrollbar.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid dark">
+    <div class="white-wipes-animate">
+      <div class="white-wipe"></div>
+      <div class="white-wipe"></div>
+      <div class="white-wipe"></div>
+      <div class="white-wipe"></div>
+      <div class="white-wipe"></div>
+    </div>
+    <div class="Wipe"></div>
+    <div id="scroller">
+      <div id="barba-wrapper">
+        <div class="barba-container">
+          <div class="wrapper">
+            <div class="navbar">
+              <div class="topleft-text-dark ">
+                <a href="homePage.html">
+                  THE <br>
+                  67TH <br>
+                  MILESTONE <br>
+                  8 - 10 <br>
+                  FEBRUARY 2019<br>
+                </a>
+              </div>
+              <div class="bottomleft-text-dark">
+                <ul style="list-style-type: none;">
+                  <li><a href="homePage.html">about</a> </li>
+                  <li><a href="#">rewind</a> </li>
+                  <li><a href="events.html">2019 events</a> </li>
+                  <li><a class="active" href="#starNights">2019 Star Nights</a> </li>
+                  <li><a href="moneyMuffin.html">money muffin</a> </li>
+                  <li><a href="partners.html">partners</a> </li>
+                  <li><a href="#">team</a> </li>
+                  <li><a href="#">mood</a> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="body" id="starNights">
+              <div class="head-dark">
+                <img class="img" alt="band" src="assests/band.png">
+                Star Nights
+              </div>
+              <div class="description-dark">
+                67th Milestone'19is the third annual Techno-Cultural and Mangament fest of BMU. 67th Milestone is a multi-faceted festival which will host a wide range of Cultural and technical programs and in this edition of the fest is to be hosted from 8th todo 10th February 2019. <br>Throughtout the three days, it will offer a platform for artists to perform , techies toprove their brilliance, speed enthusiasts to get behind the wheel, and fashion freaks to walk the ramp.
+
+                <div class="text-below-image"><br>read more</div>
+                <br><br><br><br><br><br>
+                <div class="rewind">2018</div>
+                <img class="img" alt="sunburn" src="assests/dj.png">
+                2,500 people<br>22 EVENTS<br>3 Star Nights
+                <br><br><br><br><br>
+
+                <div class="description-text-above-image">BML Munjal University is hosting the third annual Techno-Cultural
+                  Management fest, "67th Milestone" on 8-10 FEB 2019.<br><br></div>
+                  <img class="img" alt="sunburn" src="assests/sunburn.png">
+                  <div class="text-below-image" style="text-align: right; text-transform: uppercase;">star night 01/sunburn/</div>
+                  <br><br>
+                  <img class="img" alt="theLocalTrain" src="assests/theLocalTrain.png">
+                  <div class="text-below-image" style="text-align: right; text-transform: uppercase;">star night 02/the local train/</div>
+                  <!-- <img class="img2" alt="theLocalTrain" src="assests/TLT-logo.png"> -->
+                  <br><br>
+                  <img class="img" alt="theLocalTrain" src="assests/TheLocalTrain2.png">
+                  <div class="text-below-image" style="text-align: right; text-transform: uppercase;">star night 02/the local train/</div>
+                  <br><br><br><br><br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/initial.js"></script>
+    <script src="/js/fallback.js"></script>
+    <script>
+    let options = {
+      damping: 0.03,
+      thumbMinSize: 20,
+      continuousScrolling: false,
+      alwaysShowTracks: false
+    };
+
+    let Scrollbar = window.Scrollbar;
+    Scrollbar.init(document.querySelector('#scroller'), options); //initializing smooth scrollbar
+    </script>
+
+  </body>
+</html>
