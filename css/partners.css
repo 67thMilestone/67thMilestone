@@ -1,0 +1,102 @@
+.contact {
+  background-color: #fffcf8;
+  color: #9d9b99;
+  border: none;
+  width: 10%;
+  text-align: right;
+  outline: none;
+  font-size: 15px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.contact.active, .contact:hover {
+  background-color: #fffcf8;
+  text-decoration: underline;
+  width: 11%;
+}
+
+.contact:after {
+  content: '+ ';
+  color: #9d9b99;
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+}
+
+.contact.active:after {
+  content: "-";
+}
+
+@media screen and (min-width: 601px) {
+.contact{
+    font-size: 15px;
+    margin-left: 27vw;
+    margin-right: 10vw;
+  }
+  .contact:hover{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+.contact{
+    font-size: 10px;
+    margin-left: 30vw;
+    margin-right: 10vw;
+    width: 24%;
+  }
+  .contact:hover{
+    font-size: 11px;
+    width: 25%;
+  }
+  .contact.active {
+    width: 24%;
+  }
+}
+
+.list {
+  max-height: 0;
+  font-weight: bold;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #fffcf8;
+}
+
+@media screen and (min-width: 601px) {
+.list{
+    font-size: 22px;
+    margin-left: 27vw;
+    margin-right: 10vw;
+  }
+}
+@media screen and (max-width: 600px) {
+.list{
+    font-size: 13px;
+    margin-left: 30vw;
+    margin-right: 10vw;
+  }
+}
+
+.partner{
+  margin-left: 27vw;
+  /* margin-right: 20vw; */
+  color: #1a1a1a;
+  font-size: 20px;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 601px) {
+  .partner{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .partner{
+    font-size: 13px;
+    margin-right: 25vw;
+    margin-left: 30vw;
+  }
+}

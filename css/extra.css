@@ -1,0 +1,92 @@
+/* Miscellaneous CSS*/
+
+/* CSS for home page */
+@media screen and (min-width: 601px) {
+  .rewind{
+    font-size: 50px;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 600px) {
+  .rewind{
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+.description-text-above-image{
+  margin-right: 12vw;
+}
+
+.text-above-image{
+float: left;
+}
+
+.text-below-image, .text-above-image{
+  margin-right: -11vw;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 601px) {
+  .text-below-image, .text-above-image{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .text-below-image, .text-above-image{
+    font-size: 10px;
+  }
+}
+
+/* CSS for events */
+.list{
+  text-align: left;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+}
+
+.list a{
+  color: #fff;
+}
+
+.list a:hover{
+  color: #fff;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 601px) {
+  .list{
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .list{
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .left{
+    margin-left: 25vw;
+    font-size: 18px;
+  }
+  .right{
+    margin-left: 22vw;
+    font-size: 18px;
+    color: #9d9b99;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left{
+    margin-left: 25vw;
+    font-size: 12px;
+  }
+  .right{
+    margin-left: 20vw;
+    font-size: 12px;
+    color: #9d9b99;
+  }
+}

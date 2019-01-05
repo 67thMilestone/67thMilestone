@@ -1,0 +1,237 @@
+ .container-fluid{ // complete body css
+  margin: 0;
+  padding: 0;
+  background-color: #fffcf8;
+  color: #1a1a1a;
+  font-family: sans-serif;
+}
+
+.dark, .head-dark{
+  background-color: #1a1a1a;
+  color: white;
+}
+
+
+ul {
+  text-transform: uppercase;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  text-transform: uppercase;
+}
+
+/* top-left of navbar */
+.topleft-text, .topleft-text-dark {
+  margin-left: 2vw;
+  top: 5vh;
+  height: 20vh;
+  width: 20vw;
+  font-weight: medium;
+  position: fixed;
+}
+
+.topleft-text a{
+  color: #1a1a1a;
+}
+
+.topleft-text a:hover, .topleft-text-dark a:hover{
+  color: #808080;
+  text-decoration: none;
+}
+
+.topleft-text-dark, .topleft-text-dark a{
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 601px) {
+  .topleft-text, .topleft-text-dark {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topleft-text, .topleft-text-dark {
+    font-size: 10px;
+  }
+}
+
+/* bottom-left of navbar */
+.bottomleft-text, .bottomleft-text-dark {
+  top: 5vh;
+  height: 20vh;
+  width: 20vw;
+  top: 38vh;
+  position: fixed;
+  margin-left: 2vw;
+}
+
+.bottomleft-text a, .bottomleft-text-dark a{
+  color: #7a7977;
+  position: relative;
+}
+
+.bottomleft-text a:hover, .bottomleft-text-dark a:hover{
+  color: #1a1a1a;
+  font-weight: bold;
+  text-decoration: none;
+ }
+
+.bottomleft-text-dark a:hover, .bottomleft-text-dark li .active{
+   color: #fff;
+}
+
+li .active{
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.bottommost{
+  top:80vh;
+}
+
+@media screen and (min-width: 601px) {
+  .bottomleft-text, .bottomleft-text-dark{
+    font-size: 17px;
+  }
+  li .active{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bottomleft-text, .bottomleft-text-dark{
+    font-size: 11px;
+  }
+  li .active{
+    font-size: 12px;
+  }
+}
+
+/* main-body of webpage */
+/* major heading */
+.head, .head-dark{
+  margin-left: 25vw;
+  margin-right: 20vw;
+  font-weight: bold;
+  /* position: relative; */
+  text-transform: uppercase;
+  margin-top:10vh;
+}
+
+@media screen and (min-width: 601px) {
+  .head, .head-dark{
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .head, .head-dark{
+    font-size: 25px;
+    margin-left: 30vw;
+  }
+}
+
+.heading{
+  margin-left: 25vw;
+  margin-right: 20vw;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Playfair Display";
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 601px) {
+  .heading{
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .heading{
+    font-size: 27px;
+    margin-left: 30vw;
+  }
+}
+
+/* descriptions */
+.description, .description-dark{
+  color: #1a1a1a;
+  text-align: justify;
+  position: relative;
+}
+
+.description-dark{
+  color: #ccc;
+}
+
+/* .text{
+  margin-top: 8vh;
+  margin-left: 3vw;
+} */
+
+@media screen and (min-width: 601px) {
+  .description, .description-dark{
+    margin-left: 25vw;
+    margin-right: 30vw;
+    font-size: 22px;
+  }
+  .description a, .description-dark a{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .description, .description-dark{
+    font-size: 13px;
+    margin-right: 15vw;
+    margin-left: 30vw;
+  }
+  .description a, .description-dark a{
+    font-size: 11px;
+  }
+}
+
+
+/* residue of webpage */
+.residue, .residue:hover{
+  margin-left: 25vw;
+  /* margin-right: 20vw; */
+  color: #1a1a1a;
+  font-size: 20px;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.residue a,.residue a:hover{
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 601px) {
+  .residue{
+    font-size: 20px;
+  }
+  .residue:hover{
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .residue, .residue:hover{
+    font-size: 13px;
+    margin-right: 25vw;
+    margin-left: 30vw;
+  }
+  .residue:hover{
+    font-size: 14px;
+  }
+
+}
+
+/* image css */
+.img{
+  width: 130%;
+  height: auto;
+  padding: 0 5% 2% 0;
+  position: relative;
+}

@@ -1,0 +1,93 @@
+body {
+    background-color: #111;
+}
+/* removes scrollbar for all browsers */
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+/* Mentioning height and width is necessary for smooth scrollbar*/
+#scroller {
+  height: 100vh;
+  width: 98vw;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Single white wipe used for second transition*/
+.Wipe {
+    width: 100vw;
+    height: 95vh;
+    display: none;
+    position: fixed;
+    z-index: 6;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    background-color: #fff;
+}
+
+/*Not necessary. Only created for experimenting. */
+.container {
+    width: 100%;
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+/* five white wipes used for first transition*/
+.white-wipes-animate {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    left:0;
+    position: fixed;
+    top:0%;
+    pointer-events: none;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+}
+
+.white-wipe {
+    height: 100vh;
+    width: 0%;
+    background: #be2829;
+    background-color: #fff;
+    display: none;
+}
+
+/* Style of the text to be animated. Feel free to change it */
+/* .animateText {
+    font-family: Roboto;
+    font-size: 3em;
+    color: aqua;
+    margin-bottom: 50vh;
+}
+
+Neccessary for text animation and should not be modified
+.textAnimation2 {
+    overflow: hidden;
+}
+
+.textAnimation4 .letter {
+    display: inline-block;
+}
+
+.textAnimation5 .letter {
+    display: inline-block;
+}
+
+.textAnimation2 .letter {
+    display: inline-block;
+}
+
+.textAnimation3 .letter {
+    display: inline-block;
+} */
