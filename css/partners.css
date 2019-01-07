@@ -1,0 +1,402 @@
+body, .container-fluid, ul {
+  margin: 0;
+  padding: 0;
+  background-color: #fffcf8;
+  color: #1a1a1a;
+  /* font-family: neueHaasUnicaBold; */
+}
+
+ul {
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.navbar{
+  text-transform: uppercase;
+}
+
+.topleft-text {
+  margin-left: 3vw;
+  top: 5vh;
+  height: 20vh;
+  width: 20vw;
+  font-weight: medium;
+  position: fixed;
+}
+
+.topleft-text a{
+  color: #1a1a1a;
+  position: relative;
+}
+
+.topleft-text a:hover{
+  color: #808080;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 601px) {
+  .topleft-text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topleft-text {
+    font-size: 10px;
+  }
+}
+
+.bottomleft-text, .bottomleft-text1 {
+  top: 5vh;
+  height: 20vh;
+  width: 20vw;
+  top: 38vh;
+  position: fixed;
+  margin-left: 3vw;
+}
+
+.bottomleft-text a, .bottomleft-text1 a{
+  color: #7a7977;
+  position: relative;
+}
+
+.bottomleft-text a:hover, .bottomleft-text1 a:hover{
+  color: #1a1a1a;
+  font-weight: bold;
+  text-decoration: none;
+ }
+
+.bottomleft-text1 a:hover{
+   color: #fff;
+  }
+
+li .active{
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.bottommost{
+  top:80vh;
+}
+
+@media screen and (min-width: 601px) {
+  .bottomleft-text, .bottomleft-text1{
+    font-size: 17px;
+  }
+  li .active{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bottomleft-text, .bottomleft-text1{
+    font-size: 11px;
+  }
+  li .active{
+    font-size: 12px;
+  }
+}
+
+.head{
+  margin-left: 27vw;
+  margin-right: 20vw;
+  font-weight: bold;
+  /* position: relative; */
+  text-transform: uppercase;
+  margin-top:10vh;
+}
+
+@media screen and (min-width: 601px) {
+  .head{
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .head{
+    font-size: 27px;
+    margin-left: 30vw;
+  }
+}
+
+.description{
+  margin-left: 27vw;
+  margin-right: 25vw;
+  color: #1a1a1a;
+  text-align: justify;
+  position: relative;
+}
+
+@media screen and (min-width: 601px) {
+  .description {
+    font-size: 22px;
+  }
+  .description a{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .description{
+    font-size: 13px;
+    margin-right: 25vw;
+    margin-left: 30vw;
+  }
+  .description a{
+    font-size: 11px;
+  }
+}
+
+.residue, .residue:hover{
+  margin-left: 27vw;
+  /* margin-right: 20vw; */
+  color: #1a1a1a;
+  font-size: 20px;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.residue a,.residue a:hover{
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 601px) {
+  .residue{
+    font-size: 20px;
+  }
+  .residue:hover{
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .residue, .residue:hover{
+    font-size: 13px;
+    margin-right: 25vw;
+    margin-left: 30vw;
+  }
+  .residue:hover{
+    font-size: 14px;
+  }
+
+}
+
+.contact {
+  background-color: #fffcf8;
+  color: #9d9b99;
+  border: none;
+  width: 18%;
+  text-align: right;
+  outline: none;
+  font-size: 15px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.contact.active,
+.contact:hover {
+  background-color: #fffcf8;
+  text-decoration: underline;
+  width: 19%;
+}
+
+.contact:after {
+  content: "+ ";
+  color: #9d9b99;
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+}
+
+.contact.active:after {
+  content: "-";
+}
+
+@media screen and (min-width: 601px) {
+  .contact {
+    font-size: 15px;
+    margin-left: 27vw;
+    margin-right: 10vw;
+  }
+  .contact:hover {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact {
+    font-size: 10px;
+    margin-left: 30vw;
+    margin-right: 10vw;
+    width: 24%;
+  }
+  .contact:hover {
+    font-size: 11px;
+    width: 25%;
+  }
+  .contact.active {
+    width: 24%;
+  }
+}
+
+.list {
+  max-height: 0;
+  font-weight: bold;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #fffcf8;
+}
+
+@media screen and (min-width: 601px) {
+  .list {
+    font-size: 22px;
+    margin-left: 27vw;
+    margin-right: 10vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .list {
+    font-size: 13px;
+    margin-left: 30vw;
+    margin-right: 10vw;
+  }
+}
+
+.partner {
+  margin-left: 27vw;
+  /* margin-right: 20vw; */
+  color: #1a1a1a;
+  font-size: 20px;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.subheading {
+  color: #808080;
+  font-size: 25px;
+  position: relative;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+.cost {
+  color: #1a1a1a;
+  font-size: 30px;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+@media screen and (min-width: 601px) {
+  .partner {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .partner {
+    font-size: 13px;
+    margin-right: 25vw;
+    margin-left: 30vw;
+  }
+}
+
+.padding--bottom-x-small {
+  padding-bottom: 4vw;
+}
+
+.padding--bottom-small {
+  padding-bottom: 9vw;
+}
+
+.padding--bottom-medium {
+  padding-bottom: 13vw;
+}
+
+#myBtn,
+#myBtn1,
+#myBtn2,
+#myBtn3 {
+  text-transform: uppercase;
+  background-color: #fffcf8;
+  margin-left: 27vw;
+  margin-right: 25vw;
+  color: #1a1a1a;
+  position: relative;
+  color: #9d9b99;
+  text-align: right;
+}
+
+#myBtn:hover,
+#myBtn1:hover,
+#myBtn2:hover, #myBtn3:hover {
+  text-decoration: underline;
+  background-color: #fffcf8;
+  border-color: none;
+  cursor: pointer;
+}
+
+#more,
+#more1,
+#more2,
+#more3 {
+  display: none;
+}
+
+@media screen and (min-width: 601px) {
+  #myBtn {
+    margin-right: 25vw;
+    margin-left: 27vw;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #myBtn {
+    margin-right: 25vw;
+    margin-left: 30vw;
+    font-size: 10px;
+  }
+}
+
+.partner {
+  margin-left: 27vw;
+  /* margin-right: 20vw; */
+  color: #1a1a1a;
+  font-size: 20px;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 601px) {
+  .partner {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .partner {
+    font-size: 13px;
+    margin-right: 25vw;
+    margin-left: 30vw;
+  }
+}
+
+.subheading {
+  color: #808080;
+  font-size: 25px;
+  position: relative;
+  text-transform: lowercase;
+  text-decoration: none;
+  /* margin-left: 27vw; */
+}
+
+.cost {
+  color: #1a1a1a;
+  font-size: 30px;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+}
