@@ -45,12 +45,12 @@
         </div>
         <div class="bottomleft-text-dark">
           <ul style="list-style-type: none;">
-            <li><a href="homePage.html">about</a></li>
-            <li><a class="active" href="#">rewind</a></li>
-            <li><a href="events.html">2019 events</a></li>
-            <li><a href="starNights.html">2019 Star Nights</a></li>
-            <li><a href="moneyMuffin.html">money muffin</a></li>
-            <li><a href="partners.html">partners</a></li>
+            <li><a href="homePage.html" class="transition1">about</a></li>
+            <li><a class="active transition1" href="rewind.html">rewind</a></li>
+            <li><a href="events.html" class="transition1">2019 events</a></li>
+            <li><a href="starNights.html" class="transition1">2019 Star Nights</a></li>
+            <li><a href="moneyMuffin.html" class="transition1">money muffin</a></li>
+            <li><a href="partners.html" class="transition1">partners</a></li>
             <li><a href="#">team</a></li>
             <li><a href="#">mood</a></li>
           </ul>
@@ -122,18 +122,7 @@
       </div>
     </div>
   </div>
-
-  <script>
-    let options = {
-      damping: 0.03,
-      thumbMinSize: 20,
-      continuousScrolling: false,
-      alwaysShowTracks: false
-    };
-    let Scrollbar = window.Scrollbar;
-    Scrollbar.init(document.querySelector("#scroller"), options); //initializing smooth scrollbar
-  </script>
-
+  <script src="/js/main.js"></script>
   <script type="text/javascript">
     function myFunction() {
       var dots = document.getElementById("dots");

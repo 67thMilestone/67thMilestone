@@ -4,13 +4,13 @@ $(document).ready(function () {
     let Elclass;  //stores the class of link clicked for transition
 
     //options for smooth scrollbar
-    let options = {  
+    let options = {
         damping: 0.03,
         thumbMinSize: 20,
         continuousScrolling: false,
         alwaysShowTracks: false
     };
-    
+
     let Scrollbar = window.Scrollbar;
     Scrollbar.init(document.querySelector('#scroller'), options); //initializing smooth scrollbar
 
@@ -99,7 +99,7 @@ $(document).ready(function () {
 
     //returns transition to be used
     Barba.Pjax.getTransition = function () {
-        if (Elclass == "t1")
+        if (Elclass == "transition1")
             return transitionAnimation1;
         return transitionAnimation2;
     };
@@ -127,34 +127,44 @@ $(document).ready(function () {
     let controller = new ScrollMagic.Controller();
 
     //adding scroll triggered text animations
-    var scene = new ScrollMagic.Scene({
-        triggerElement: ".textAnimation1",
-        triggerHook: 1
-    })
-    .setTween(textAnimation1) // trigger a TweenMax.to tween
-    .addTo(controller);
-    var scene = new ScrollMagic.Scene({
-        triggerElement: ".textAnimation2",
-        triggerHook: 1
-    })
-    .setTween(textAnimation2) // trigger a TweenMax.to tween
-    .addTo(controller);
-    var scene = new ScrollMagic.Scene({
-        triggerElement: ".textAnimation3",
-        triggerHook: 1
-    })
-    .setTween(textAnimation3) // trigger a TweenMax.to tween
-    .addTo(controller);
-    var scene = new ScrollMagic.Scene({
-        triggerElement: ".textAnimation4",
-        triggerHook: 1
-    })
-    .setTween(textAnimation4) // trigger a TweenMax.to tween
-    .addTo(controller);
-    var scene = new ScrollMagic.Scene({
-        triggerElement: ".textAnimation5",
-        triggerHook: 1
-    })
-    .setTween(textAnimation5) // trigger a TweenMax.to tween
-    .addTo(controller);
+    if ($(".textAnimation1").length > 0) {
+        var scene = new ScrollMagic.Scene({
+            triggerElement: ".textAnimation1",
+            triggerHook: 1
+        })
+            .setTween(textAnimation1) // trigger a TweenMax.to tween
+            .addTo(controller);
+    }
+    if ($(".textAnimation2").length > 0) {
+        var scene = new ScrollMagic.Scene({
+            triggerElement: ".textAnimation2",
+            triggerHook: 1
+        })
+            .setTween(textAnimation2) // trigger a TweenMax.to tween
+            .addTo(controller);
+    }
+    if ($(".textAnimation3").length > 0) {
+        var scene = new ScrollMagic.Scene({
+            triggerElement: ".textAnimation3",
+            triggerHook: 1
+        })
+            .setTween(textAnimation3) // trigger a TweenMax.to tween
+            .addTo(controller);
+    }
+    if ($(".textAnimation4").length > 0) {
+        var scene = new ScrollMagic.Scene({
+            triggerElement: ".textAnimation4",
+            triggerHook: 1
+        })
+            .setTween(textAnimation4) // trigger a TweenMax.to tween
+            .addTo(controller);
+    }
+    if ($(".textAnimation5").length > 0) {
+        var scene = new ScrollMagic.Scene({
+            triggerElement: ".textAnimation5",
+            triggerHook: 1
+        })
+            .setTween(textAnimation5) // trigger a TweenMax.to tween
+            .addTo(controller);
+    }
 });
