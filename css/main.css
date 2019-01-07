@@ -13,6 +13,7 @@ body {
   right: 0;
   overflow: auto;
 } */
+
 .container-fluid {
   /* // complete body css */
   margin: 0;
@@ -303,11 +304,11 @@ li .active {
 }
 
 .text-below-image {
-  margin-bottom: 8vh;
+  margin-bottom: 18vh;
 }
 
 .event {
-  margin-top: 50vh;
+  margin-top: 30vh;
 }
 
 @media screen and (min-width: 601px) {
