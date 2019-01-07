@@ -1,25 +1,35 @@
-#myBtn{
+#myBtn,
+#myBtn1,
+#myBtn2,
+#myBtn3 {
   text-transform: uppercase;
   background-color: #fffcf8;
   margin-left: 27vw;
-  margin-right: 20vw;
+  margin-right: 25vw;
   color: #1a1a1a;
   position: relative;
   color: #9d9b99;
+  text-align: right;
 }
 
-#myBtn:hover{
+#myBtn:hover,
+#myBtn1:hover,
+#myBtn2:hover, #myBtn3:hover {
   text-decoration: underline;
   background-color: #fffcf8;
   border-color: none;
+  cursor: pointer;
 }
 
-#more{
+#more,
+#more1,
+#more2,
+#more3 {
   display: none;
 }
 
 @media screen and (min-width: 601px) {
-  #myBtn{
+  #myBtn {
     margin-right: 25vw;
     margin-left: 27vw;
     font-size: 15px;
@@ -27,14 +37,14 @@
 }
 
 @media screen and (max-width: 600px) {
-  #myBtn{
+  #myBtn {
     margin-right: 25vw;
     margin-left: 30vw;
     font-size: 10px;
   }
 }
 
-.partner{
+.partner {
   margin-left: 27vw;
   /* margin-right: 20vw; */
   color: #1a1a1a;
@@ -45,15 +55,32 @@
 }
 
 @media screen and (min-width: 601px) {
-  .partner{
+  .partner {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .partner{
+  .partner {
     font-size: 13px;
     margin-right: 25vw;
     margin-left: 30vw;
   }
+}
+
+.subheading {
+  color: #808080;
+  font-size: 25px;
+  position: relative;
+  text-transform: lowercase;
+  text-decoration: none;
+  /* margin-left: 27vw; */
+}
+
+.cost {
+  color: #1a1a1a;
+  font-size: 30px;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
 }
