@@ -1,0 +1,221 @@
+*{
+  /* font-family: "Comic Sans MS", cursive, sans-serif; */
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+/* body of the page
+need not to be changed */
+body {
+  margin: 0;
+  background-color: #fffcf8;
+  color: #1a1a1a;
+  z-index: -1;
+}
+
+.nav-dark{
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+/* navbar
+need not to be changed */
+/* responsive */
+.nav, .nav-dark {
+  top:0;
+  text-transform: uppercase;
+  height: 100vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  position: fixed;
+  z-index: 100;
+}
+
+.nav ul, .nav-dark ul {
+  list-style: none;
+  margin-top: 5vh;
+  right: 7vw;
+}
+
+/* responsive */
+.nav ul li a, .nav-dark ul li a{
+  display: block;
+  padding: .1vw;
+  text-decoration: none;
+  margin-right: 1vw;
+}
+
+.nav .icon, .nav-dark .icon{
+  display:none;
+}
+
+/* to hide the text and only display the hamburger */
+@media screen and (max-width: 600px) {
+/* responsive */
+ .nav ul li a, .nav-dark ul li a {
+    display: none;
+  }
+
+/* responsive */
+ .nav ul li a.icon,.nav-dark ul li a.icon {
+    float: left;
+    display: block;
+    background-color: #fff;
+  }
+}
+
+/* responsive humburger from js
+i.e. the Expand of the navbar */
+@media screen and (max-width: 600px) {
+  .nav.responsive, .nav-dark.responsive {
+    position: fixed;
+    background-color: #fff;
+  }
+
+  .nav.responsive a.icon, .nav-dark.responsive a.icon {
+    position: absolute;
+    right: 0;
+    left: 80vw;
+    top: 0;
+    margin-top: 2vh;
+  }
+
+  .nav.responsive a,.nav-dark.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* different tiers of the navbar */
+/* responsive */
+.topleft-text, .topleft-text a{
+  font-weight: medium;
+  color: #1a1a1a;
+}
+
+.topleft-text-dark, .topleft-text-dark a{
+  font-weight: medium;
+  color: #fff;
+}
+
+.topleft-text a:hover,
+.topleft-text-dark a:hover {
+  color: #808080;
+  text-decoration: none;
+}
+
+/* responsive */
+.bottomleft-text, .bottomleft-text-dark{
+  margin-top: 15vh;
+}
+
+.bottomleft-text a, .bottomleft-text-dark a{
+  color: #777777;
+}
+
+.bottomleft-text a:hover, li .active{
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.bottomleft-text-dark a{
+  background-color: #1a1a1a;
+}
+
+.bottomleft-text-dark a:hover,li .dark-active{
+  color: #fff;
+  font-weight: bold;
+}
+
+
+/* body */
+/* responsive */
+main,  main .dark{
+  margin-left: 25vw;
+}
+
+section {
+  /* height: 100%;
+  width: 100%; */
+}
+
+/* responsive */
+.head, .head-dark{
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 15vh;
+}
+
+.head-dark{
+  color: #fff;
+  background-color: #1a1a1a;
+}
+
+/* responsive */
+.description{
+  color: #1a1a1a;
+  text-align: justify;
+}
+
+.text {
+  margin-top: 5vh;
+}
+
+/* partners, moneyMuffin */
+
+/* for expand and collapse btn */
+/* responsive */
+#myBtn, #myBtn1, #myBtn2{
+  text-transform: uppercase;
+  background-color: #fffcf8;
+  position: relative;
+  color: #9d9b99;
+  text-align: right;
+  cursor: pointer;
+}
+
+#myBtn:hover, #myBtn1:hover, #myBtn2:hover{
+  text-decoration: underline;
+  background-color: #fffcf8;
+  border-color: none;
+}
+
+/* text that is being hidden by the button */
+#more, #more1, #more2{
+  display: none;
+}
+
+/* minor headings */
+.subheading{
+  text-transform: lowercase;
+  color: #9d9b99;
+  font-weight: medium;
+  margin-top: 10vh;
+}
+
+/* part of minor headings */
+/* responsive */
+.cost{
+  font-weight: medium;
+}
+
+/* starNights, Home, rewind */
+/* image css */
+/* responsive */
+.img {
+  width: 130%;
+  height: auto;
+  padding: 0 5% 2% 0;
+  position: relative;
+  margin-top: 10vh;
+}
+
+
+.text-below-image{
+  text-align: right;
+}
+
+.dark{
+  background-color: #fffcf8;
+  color: #fff;
+}

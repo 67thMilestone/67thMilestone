@@ -1,0 +1,125 @@
+/* make sure to refer dummy.css */
+
+@media screen and (min-width: 601px) {
+/* do not change anything is this */
+  main {
+    margin-left: 27vw;
+    margin-right: 30vw;
+  }
+  .navbar{
+    width:10vw;
+  }
+  .top-left{
+    font-size: 15px;
+  }
+  .bottomleft-text, .bottomleft-text1{
+     font-size: 17px;
+   }
+   li .active{
+     font-size: 18px;
+   }
+   .bottommost {
+     margin-top: 13vh;
+   }
+   .head, .head-dark{
+      font-size: 50px;
+    }
+    .description {
+      font-size: 22px;
+    }
+    .description a{
+      font-size: 18px;
+    }
+    .cost{
+      font-size: 30px;
+    }
+    #myBtn,#myBtn1,#myBtn2{
+      font-size: 15px;
+    }
+    .text-below-image{
+      margin-right: -12vw;
+    }
+    .img {
+      width: 130%;
+      height: auto;
+      padding: 0 5% 2% 0;
+      position: relative;
+      margin-top: 10vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  /* for the navbar */
+  .topleft-text {
+    font-size: 12px;
+  }
+  .bottomleft-text a, .bottomleft-text a:hover{
+    font-size: 22px;
+  }
+  li .active{
+    font-size: 24px;
+  }
+  .bottommost {
+    margin-top: 20vh;
+  }
+  /* all major headings....subheading needed to added */
+  .head{
+    font-size: 27px;
+    /* margin-left: 30vw; */
+  }
+  /* description of the text */
+  .description{
+    font-size: 15px;
+    /* margin-right: 25vw;
+    margin-left: 30vw; */
+  }
+  .description a{
+    font-size: 15px;
+  }
+  /* money muffin cost */
+  .cost{
+    font-size: 23px;
+  }
+  #myBtn,#myBtn1,#myBtn2{
+    font-size: 10px;
+  }
+  /* image dimensions for all the sizes */
+  /* should not be changed */
+  .img {
+    width: 100%;
+    height: auto;
+    padding: 0 5% 2% 0;
+    position: relative;
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* content margin */
+    main {
+      margin-left: 10vw;
+      margin-right: 10vw;
+    }
+
+  /* hamburger */
+ .nav ul li a.icon,.nav-dark ul li a.icon {
+   /*  dont change */
+    margin-top: -20vh;
+    /* dont change */
+    margin-left: -12vw;
+    /* change these two to move hamburger */
+    padding-top: 2vh;
+    padding-left: 10vw;
+  }
+
+  .topleft-text,  .bottomleft{
+    /* to hide the text */
+    display: none;
+  }
+  .nav ul li a, .nav-dark ul li a{
+    /* links of navbar */
+    padding: .1vw;
+    text-decoration: none;
+    width: 100vw;
+  }
+}
