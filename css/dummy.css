@@ -212,10 +212,54 @@ section {
 
 
 .text-below-image{
+  text-transform: uppercase;
   text-align: right;
+}
+
+.text-above-image{
+  margin-top: 10vh;
+  margin-bottom: -10vh;
+  margin-right: 15vw;
 }
 
 .dark{
   background-color: #fffcf8;
   color: #fff;
+}
+
+
+/* homepage css */
+.left_float, .right_float{
+  margin: 0;
+  margin-top: 10vh;
+  padding: 0;
+  list-style: none;
+  float: left;
+  font-size: 22px;
+  /* margin-right: 5vw; */
+  display: block;
+}
+
+.right_float {
+  float: right;
+}
+
+.left_float a, .right_float a, .left_float a:hover, .right_float a:hover{
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+ .left_float a:hover, .right_float a:hover{
+   text-decoration: underline;
+   font-weight: bold;
+   font-size: 17px;
+ }
+
+.description-text-above-image{
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 18px;
+  margin-top: -4vh;
+  margin-right: -12vw;
+  margin-bottom: -8vh;
 }
