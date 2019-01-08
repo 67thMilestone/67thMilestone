@@ -24,6 +24,7 @@ $(document).ready(function () {
 
         startTransition: function () {
             let deferred = Barba.Utils.deferred();
+            $('html').css('pointer-events', 'none');
             $('html,body').animate({ scrollTop: 0 }, 'slow');
             var outTransition = new TimelineMax();
             outTransition
@@ -50,6 +51,7 @@ $(document).ready(function () {
                     opacity: 1,
                     onComplete: function () {
                         _this.done();
+                        $('html').css('pointer-events', 'auto');
                     }
                 }, "-=0.4");
         }
@@ -64,6 +66,7 @@ $(document).ready(function () {
         },
 
         startTransition: function () {
+            $('html').css('pointer-events', 'none');
             let deferred = Barba.Utils.deferred();
             $('html,body').animate({ scrollTop: 0 }, 'slow');
             var outTransition = new TimelineMax();
@@ -86,6 +89,7 @@ $(document).ready(function () {
                     opacity: 1,
                     onStart: function () {
                         _this.done();
+                        $('html').css('pointer-events', 'auto');
                     }
                 }, "-=0.7")
                 .set(".Wipe", { display: 'none' });
