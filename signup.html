@@ -1,0 +1,118 @@
+<html>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <body>
+        <style>
+            .content{
+    text-align: center;
+    padding-top:20%; 
+    text-decoration-color: #0000;
+    text-shadow: 0px 4px 3px rgb(151, 155, 156);
+    }    
+    body{
+        background-image: url(http://i64.tinypic.com/30hvjw9.jpg) ;
+        height: 100%;
+        background-position: center;  
+        background-size: cover;
+    }
+    .mar{
+        margin-left: 182px;
+        margin-right: 255px;
+        text-align: center;
+    }
+    </style>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    <div class="content">
+                        <h1 style="font-size:70px">
+                            Registration Form</h1>
+                        <br><br>
+                        <form action="" method="POST">
+                            <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="Fullname" name="username">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">University</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="University" name="university">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email"
+                                     name="email">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">Participants</label>
+                                <div class="col-sm-10">
+                                    <input type="Number" class="form-control" placeholder="Participants" name="no_par">
+                                </div>
+                            </div>
+                            <div class="input-group row">
+                                <label for="inputGroupSelect01" class="col-sm-2 col-form-label">Events</label>
+                                <div class="col-sm-10">
+                                    <select class="custom-select mar" id="inputGroupSelect01" name="selected">
+                                        <!-- <option selected id="selected">Choose...</option> -->
+                                        <option value="1">fine arts marathon</option>
+                                        <option value="2">online photography contest</option>
+                                        <option value="3">master chef'19</option>
+                                        <option value="4">hackbmu</option>
+                                        <option value="5">sci-ex exhibit</option>
+                                        <option value="6">encrypt</option>
+                                        <option value="7">halls of summer</option>
+                                        <option value="8">inquizitive</option>
+                                        <option value="9">slam poetry</option>
+                                        <option value="10">battle of bands</option>
+                                        <option value="11">beat the street</option>
+                                        <option value="12">rihaai - nukkad</option>
+                                        <option value="13">unplugged</option>
+                                        <option value="14">bailar</option>
+                                        <option value="15">rc nitro</option>
+                                        <option value="16">line follower</option>
+                                        <option value="17">aerial drones</option>
+                                        <option value="18">robo race</option>
+                                        <option value="19">robo soccer</option>
+                                        <option value="20">robo war</option>
+                                        <option value="21">theatre phantamonica</option>
+                                        <option value="22">war of djs</option>
+                                        <option value="23">spic macay</option>
+                                        <option value="24">fashion crave</option>
+                                        <option value="25">model united nations</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-primary">Create an Account</button>
+
+                        </form>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var urlParams = new URLSearchParams(window.location.search);
+            document.getElementById("inputGroupSelect01").selectedIndex = urlParams.get('a');
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+            crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
