@@ -12,10 +12,10 @@ body {
   z-index: -1;
 }
 
-.nav-dark{
+/* .nav-dark{
   background-color: #1a1a1a;
   color: #fff;
-}
+} */
 
 /* navbar
 need not to be changed */
@@ -30,6 +30,7 @@ need not to be changed */
   z-index: 100;
 }
 
+/* navbar elements styling */
 .nav ul, .nav-dark ul {
   list-style: none;
   margin-top: 5vh;
@@ -59,7 +60,7 @@ need not to be changed */
  .nav ul li a.icon,.nav-dark ul li a.icon {
     float: left;
     display: block;
-    background-color: #fff;
+    background-color: #fffcf8;
   }
 }
 
