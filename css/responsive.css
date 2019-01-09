@@ -5,6 +5,7 @@
   main {
     margin-left: 27vw;
     margin-right: 30vw;
+    margin-bottom: 10vh;
   }
   .navbar{
     width:10vw;
@@ -54,10 +55,10 @@
     font-size: 12px;
   }
   .bottomleft-text a, .bottomleft-text a:hover{
-    font-size: 22px;
+    font-size: 25px;
   }
   li .active{
-    font-size: 24px;
+    font-size: 27px;
   }
   .bottommost {
     margin-top: 20vh;
