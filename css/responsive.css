@@ -105,7 +105,7 @@
   }
   /* image dimensions for all the sizes */
   /* should not be changed */
-  .img {
+  .img, img2 {
     /* dont change the width since its directly corresponding to the main class */
     width: 100%;
     /* adjust it if u want */
@@ -162,9 +162,6 @@
     margin-top: -2vh;
     margin-bottom: 8vh;
   }
-  .theLocalTrain{
-    margin-top: 10vh;
-  }
 }
 
 @media screen and (max-width: 360px){
@@ -173,7 +170,7 @@
     margin-top: 3vh;
     margin-bottom: -4vh;
   }
-  .img{
+  .img, img2{
     margin-top: 5vh;
   }
   .text-below-image{
@@ -199,7 +196,7 @@
     margin-top: 3vh;
     margin-bottom: -4vh;
   }
-  .img{
+  .img, img2{
     margin-top: 5vh;
   }
   .text-below-image{
@@ -219,7 +216,7 @@
     margin-top: 3vh;
     margin-bottom: -6vh;
   }
-  .img{
+  .img, img2{
     margin-top: 5vh;
   }
   .text-below-image{
