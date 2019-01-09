@@ -27,6 +27,7 @@
     }
     .description {
       font-size: 22px;
+      margin-bottom: 5vh;
     }
     .description a{
       font-size: 18px;
@@ -39,13 +40,28 @@
     }
     .text-below-image{
       margin-right: -12vw;
+      margin-top: -2vh;
+      margin-bottom: 5vh;
     }
-    .img {
+    .img, .img2 {
       width: 130%;
       height: auto;
       padding: 0 5% 2% 0;
       position: relative;
-      margin-top: 10vh;
+      margin-top: 5vh;
+    }
+    /* change the beginning image classes to img2 */
+    .img2{
+      margin-top: 0vh;
+    }
+    .description-text-above-image{
+      font-size: 18px;
+      margin-top: -4vh;
+      margin-right: -12vw;
+      margin-bottom: -4vh;
+    }
+    .text-above-image{
+      margin-bottom: -6vh;
     }
 }
 
@@ -65,34 +81,42 @@
   }
   /* all major headings....subheading needed to added */
   .head{
-    font-size: 27px;
+    font-size: 33px;
     /* margin-left: 30vw; */
   }
   /* description of the text */
   .description{
-    font-size: 15px;
+    font-size: 18px;
     /* margin-right: 25vw;
     margin-left: 30vw; */
   }
   .description a{
-    font-size: 15px;
+    font-size: 18px;
+  }
+  .subheading{
+    font-size: 25px;
   }
   /* money muffin cost */
   .cost{
     font-size: 23px;
   }
   #myBtn,#myBtn1,#myBtn2{
-    font-size: 10px;
+    font-size: 12px;
   }
   /* image dimensions for all the sizes */
   /* should not be changed */
   .img {
+    /* dont change the width since its directly corresponding to the main class */
     width: 100%;
-    height: auto;
+    /* adjust it if u want */
+    /* height: 60vh; */
     padding: 0 5% 2% 0;
     position: relative;
     margin-top: 0;
   }
+  /* .event{
+    padding-bottom: 10vh;
+  } */
 }
 
 @media screen and (max-width: 600px) {
@@ -124,4 +148,90 @@
     text-decoration: none;
     width: 100vw;
   }
+  .description-text-above-image{
+    font-size: 15px;
+    margin-top: -3vh;
+    margin-bottom: 1vh;
+  }
+  .text-above-image{
+    font-size: 15px;
+    margin-bottom: -2vh;
+  }
+  .text-below-image{
+    font-size: 15px;
+    margin-top: -2vh;
+    margin-bottom: 8vh;
+  }
+  .theLocalTrain{
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .description-text-above-image{
+    font-size: 10px;
+    margin-top: 3vh;
+    margin-bottom: -4vh;
+  }
+  .img{
+    margin-top: 5vh;
+  }
+  .text-below-image{
+    font-size: 11px;
+    margin-top: 0;
+    /* margin-bottom: 8vh; */
+  }
+  .text-above-image{
+    font-size: 15px;
+    margin-bottom: -6vh;
+  }
+  .text, .description{
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 441px){
+  .text, .description{
+    text-align: justify;
+  }
+  .description-text-above-image{
+    font-size: 10px;
+    margin-top: 3vh;
+    margin-bottom: -4vh;
+  }
+  .img{
+    margin-top: 5vh;
+  }
+  .text-below-image{
+    font-size: 11px;
+    margin-top: 0;
+    /* margin-bottom: 8vh; */
+  }
+  .text-above-image{
+    font-size: 15px;
+    margin-bottom: -6vh;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .description-text-above-image{
+    font-size: 10px;
+    margin-top: 3vh;
+    margin-bottom: -6vh;
+  }
+  .img{
+    margin-top: 5vh;
+  }
+  .text-below-image{
+    font-size: 11px;
+    margin-top: 0;
+    /* margin-bottom: 8vh; */
+  }
+  .text-above-image{
+    font-size: 15px;
+    margin-bottom: -6vh;
+  }
+  /* .text, .description{
+    text-align: left;
+  } */
 }
