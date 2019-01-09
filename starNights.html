@@ -8,11 +8,12 @@
 	<link rel="stylesheet" href="css/dummy.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/hover.css">
 </head>
-<body class="zindex dark">
+<body class="zindex ">
 
   <nav id="navbar" class="nav">
-    <div class="topleft-text-dark ">
+    <div class="topleft-text ">
       <ul>
         <li>
           <a href="homePage.html">
@@ -25,7 +26,7 @@
         </li>
       </ul>
     </div>
-    <div class="bottomleft-text-dark">
+    <div class="bottomleft-text">
       <ul>
         <li><a href="homePage.html">about</a> </li>
         <li><a href="rewind.html">rewind</a> </li>
@@ -41,9 +42,9 @@
     <div class="bottomleft-text bottommost">
         <ul>
           <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <img onclick="icon()" id="test" src="assets/Hamburger.svg" height="45vh" width="45vw"></i>
+                <img onclick="icon()" id="test" src="assets/Hamburger.svg" height="45vh" width="45vw">
               </a>
-
+          </li>
         </ul>
     </div>
   </nav>
@@ -55,7 +56,7 @@
       <a>Star Nights 2019</a>
     </div>
 
-    <div class="description-dark">
+    <div class="description">
       <p class="text">
         67th Milestone ‘19 is the third annual Techno-Cultural and Management fest of BMU. 67th Milestone is a multi-faceted festival
 		    which will host a wide range of cultural and technical programs and this edition of the fest is to be hosted from from 8th-10th
@@ -102,16 +103,6 @@
 
   </main>
 
-  <footer>
-    &copy;2018 67th Milestone
-  </footer>
-
-
-
-
-
-
-
 
   <script>
     function myFunction() {
@@ -132,7 +123,7 @@
 
   if (dots.style.display === "none") {
   dots.style.display = "inline";
-  btnText.innerHTML = "Expand";
+  btnText.innerHTML = "More Information";
   moreText.style.display = "none";
   } else {
   dots.style.display = "none";
@@ -142,41 +133,6 @@
   }
   </script>
 
-  <script type="text/javascript">
-  function nextExpand() {
-  var dots = document.getElementById("dots1");
-  var moreText = document.getElementById("more1");
-  var btnText = document.getElementById("myBtn1");
-
-  if (dots.style.display === "none") {
-  dots.style.display = "inline";
-  btnText.innerHTML = "Expand";
-  moreText.style.display = "none";
-  } else {
-  dots.style.display = "none";
-  btnText.innerHTML = "collapse";
-  moreText.style.display = "inline";
-  }
-  }
-  </script>
-
-  <script type="text/javascript">
-  function nextnextExpand() {
-  var dots = document.getElementById("dots2");
-  var moreText = document.getElementById("more2");
-  var btnText = document.getElementById("myBtn2");
-
-  if (dots.style.display === "none") {
-  dots.style.display = "inline";
-  btnText.innerHTML = "Expand";
-  moreText.style.display = "none";
-  } else {
-  dots.style.display = "none";
-  btnText.innerHTML = "collapse";
-  moreText.style.display = "inline";
-  }
-  }
-  </script>
 
   </body>
   </html>
