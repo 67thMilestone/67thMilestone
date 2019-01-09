@@ -54,7 +54,7 @@
   .topleft-text {
     font-size: 12px;
   }
-  .bottomleft-text a, .bottomleft-text a:hover{
+  .bottomleft-text a, .bottomleft-text a:hover, .bottomleft-text-dark a, .bottomleft-text-dark a:hover{
     font-size: 25px;
   }
   li .active{
@@ -91,7 +91,7 @@
     height: auto;
     padding: 0 5% 2% 0;
     position: relative;
-    margin-top: 10vh;
+    margin-top: 0;
   }
 }
 
@@ -110,10 +110,11 @@
     margin-left: -12vw;
     /* change these two to move hamburger */
     padding-top: 2vh;
+    /* to change the the distance between navbar and main content in beginning */
     padding-left: 10vw;
   }
 
-  .topleft-text,  .bottomleft{
+  .topleft-text, .topleft-text-dark, .bottomleft{
     /* to hide the text */
     display: none;
   }
