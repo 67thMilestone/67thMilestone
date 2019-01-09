@@ -122,7 +122,7 @@ i.e. the Expand of the navbar */
   background-color: #1a1a1a;
 }
 
-.bottomleft-text-dark a:hover,li .dark-active{
+.bottomleft-text-dark a:hover,.bottomleft-text-dark .active{
   color: #fff;
   font-weight: bold;
 }
@@ -157,6 +157,11 @@ section {
   text-align: justify;
 }
 
+.description-dark{
+  color: #fff;
+  text-align: justify;
+}
+
 .text {
   margin-top: 5vh;
 }
@@ -172,6 +177,11 @@ section {
   color: #9d9b99;
   text-align: right;
   cursor: pointer;
+}
+
+.dark #myBtn, .dark #myBtn1, .dark #myBtn2, .dark #myBtn:hover, .dark #myBtn1:hover, .dark #myBtn2:hover{
+  background-color: #1a1a1a;
+  color: #fff;
 }
 
 #myBtn:hover, #myBtn1:hover, #myBtn2:hover{
@@ -216,17 +226,17 @@ section {
   text-align: right;
 }
 
+.list-dark .left_float a, .list-dark .right_float a, .list-dark .left_float a:hover, .list-dark .right_float a:hover{
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+
 .text-above-image{
   margin-top: 10vh;
   margin-bottom: -10vh;
   margin-right: 15vw;
 }
-
-.dark{
-  background-color: #fffcf8;
-  color: #fff;
-}
-
 
 /* homepage css */
 .left_float, .right_float{
