@@ -50,7 +50,7 @@ need not to be changed */
 }
 
 /* to hide the text and only display the hamburger */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 /* responsive */
  .nav ul li a, .nav-dark ul li a {
     display: none;
@@ -66,12 +66,13 @@ need not to be changed */
 
 /* responsive humburger from js
 i.e. the Expand of the navbar */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .nav.responsive, .nav-dark.responsive {
     position: fixed;
     background-color: #fff;
   }
 
+/* the responsive navbar which opens on small screen doesn't supposed to be changed */
   .nav.responsive a.icon, .nav-dark.responsive a.icon {
     position: absolute;
     right: 0;
@@ -94,10 +95,10 @@ i.e. the Expand of the navbar */
   color: #1a1a1a;
 }
 
-.topleft-text-dark, .topleft-text-dark a{
+/* .topleft-text-dark, .topleft-text-dark a{
   font-weight: medium;
   color: #fff;
-}
+} */
 
 .topleft-text a:hover,
 .topleft-text-dark a:hover {
@@ -119,9 +120,9 @@ i.e. the Expand of the navbar */
   font-weight: bold;
 }
 
-.bottomleft-text-dark a{
+/* .bottomleft-text-dark a{
   background-color: #1a1a1a;
-}
+} */
 
 .bottomleft-text-dark a:hover,.bottomleft-text-dark .active{
   color: #fff;
@@ -147,10 +148,10 @@ section {
   margin-top: 15vh;
 }
 
-.head-dark{
+/* .head-dark{
   color: #fff;
   background-color: #1a1a1a;
-}
+} */
 
 /* responsive */
 .description{
@@ -158,10 +159,10 @@ section {
   text-align: justify;
 }
 
-.description-dark{
+/* .description-dark{
   color: #fff;
   text-align: justify;
-}
+} */
 
 .text {
   margin-top: 5vh;
@@ -170,6 +171,7 @@ section {
 /* partners, moneyMuffin */
 
 /* for expand and collapse btn */
+/* do add the animation to these */
 /* responsive */
 #myBtn, #myBtn1, #myBtn2{
   text-transform: uppercase;
@@ -180,10 +182,10 @@ section {
   cursor: pointer;
 }
 
-.dark #myBtn, .dark #myBtn1, .dark #myBtn2, .dark #myBtn:hover, .dark #myBtn1:hover, .dark #myBtn2:hover{
+/* .dark #myBtn, .dark #myBtn1, .dark #myBtn2, .dark #myBtn:hover, .dark #myBtn1:hover, .dark #myBtn2:hover{
   background-color: #1a1a1a;
   color: #fff;
-}
+} */
 
 #myBtn:hover, #myBtn1:hover, #myBtn2:hover{
   text-decoration: underline;
@@ -227,10 +229,11 @@ section {
   text-align: right;
 }
 
-.list-dark .left_float a, .list-dark .right_float a, .list-dark .left_float a:hover, .list-dark .right_float a:hover{
+/* homePage links *needed to be copied on the money muffin and partners since no list has been made as such */
+/* .list-dark .left_float a, .list-dark .right_float a, .list-dark .left_float a:hover, .list-dark .right_float a:hover{
   background-color: #1a1a1a;
   color: #fff;
-}
+} */
 
 
 .text-above-image{
@@ -240,6 +243,7 @@ section {
 }
 
 /* homepage css */
+/* homePage links *needed to be copied on the money muffin and partners since no list has been made as such */
 .left_float, .right_float{
   margin: 0;
   margin-top: 10vh;
@@ -251,10 +255,12 @@ section {
   display: block;
 }
 
+/* right float the list */
 .right_float {
   float: right;
 }
 
+/* css to the lists anchor and these hover effect */
 .left_float a, .right_float a, .left_float a:hover, .right_float a:hover{
   color: #1a1a1a;
   text-decoration: none;
@@ -266,11 +272,8 @@ section {
    font-size: 17px;
  }
 
+/* the COSMOPOLITAN one *needed to be added on responsive */
 .description-text-above-image{
   text-transform: uppercase;
   text-align: right;
-  font-size: 18px;
-  margin-top: -4vh;
-  margin-right: -12vw;
-  margin-bottom: -8vh;
 }
