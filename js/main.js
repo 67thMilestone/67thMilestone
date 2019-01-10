@@ -113,7 +113,6 @@ $(document).ready(function () {
 
     //storing class of link clicked for transition to show different transition based on link clicked
     Barba.Dispatcher.on('linkClicked', function (HTMLElement, MouseEvent) {
-        // $(HTMLElement).addClass('active');
         nextElement = $(HTMLElement);
     });
 
