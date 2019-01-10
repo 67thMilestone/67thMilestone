@@ -1,6 +1,6 @@
 /* make sure to refer dummy.css */
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 769px) {
 /* do not change anything is this */
   main {
     margin-left: 27vw;
@@ -63,9 +63,65 @@
     .text-above-image{
       margin-bottom: -6vh;
     }
+  .nav-list-about a:hover:after{
+      width: 38%;
+      left: 0;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      visibility: visible;
+    }
+    .nav-list-rewind a:hover:after{
+      width: 45%;
+      left: 0;
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+    .nav-list-events a:hover:after{
+      width: 74%;
+      left: 0;
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+    .nav-list-starNights a:hover:after{
+      width: 93%;
+      left: 0;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      visibility: visible;
+    }
+    .nav-list-moneyMuffin a:hover:after{
+      width: 86%;
+      left: 0;
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+    .nav-list-partners a:hover:after{
+      width: 56%;
+      left: 0;
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+    .nav-list-team a:hover:after{
+      width: 31%;
+      left: 0;
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+    .nav-list-mood a:hover:after {
+      width: 36%;
+      left: 0;
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   /* for the navbar */
   .topleft-text {
     font-size: 12px;
@@ -117,9 +173,65 @@
   /* .event{
     padding-bottom: 10vh;
   } */
+  .nav-list-about a:hover:after{
+    width: 14vw;
+    left: 0;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    visibility: visible;
+  }
+  .nav-list-rewind a:hover:after{
+    width: 17vw;
+    left: 0;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  .nav-list-events a:hover:after{
+    width: 26vw;
+    left: 0;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  .nav-list-starNights a:hover:after{
+    width: 38vw;
+    left: 0;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    visibility: visible;
+  }
+  .nav-list-moneyMuffin a:hover:after{
+    width: 32vw;
+    left: 0;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  .nav-list-partners a:hover:after{
+    width: 21vw;
+    left: 0;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  .nav-list-team a:hover:after{
+    width: 12vw;
+    left: 0;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  .nav-list-mood a:hover:after {
+    width: 13.5vw;
+    left: 0;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   /* content margin */
     main {
       margin-left: 10vw;
