@@ -47,7 +47,7 @@
         <li><a href="rewind.html">rewind</a></li>
         <li><a href="events.html">2019 events</a></li>
         <li><a href="starNights.html">2019 Star Nights</a></li>
-        <li><a class="active" href="#moneyMuffin">money muffin</a></li>
+        <li><a class="active" href="moneyMuffin.html">money muffin</a></li>
         <li><a href="partners.html">partners</a></li>
         <li><a href="#team">team</a></li>
         <li><a href="#mood">mood</a></li>
@@ -231,58 +231,60 @@
               <div class="cost">Rs. 14,999</div>
             </div>
 
-            <script src="/js/initial.js"></script>
-            <script src="/js/main.js"></script>
-            <script>
-              function myFunction() {
-                var x = document.getElementById("navbar");
-                if (x.className === "nav") {
-                  x.className += " responsive";
-                } else {
-                  x.className = "nav";
-                }
-              }
-            </script>
-            <script type="text/javascript">
-              function Expand() {
-                var dots = document.getElementById("dots");
-                var moreText = document.getElementById("more");
-                var btnText = document.getElementById("myBtn");
-
-                if (dots.style.display === "none") {
-                  dots.style.display = "inline";
-                  btnText.innerHTML = "Expand";
-                  moreText.style.display = "none";
-                } else {
-                  dots.style.display = "none";
-                  btnText.innerHTML = "collapse";
-                  moreText.style.display = "inline";
-                }
-              }
-
-              //creating a ScrollMagic.Controller instance
-              let controller = new ScrollMagic.Controller();
-
-              //adding scroll triggered text animations
-              var scene = new ScrollMagic.Scene({
-                triggerElement: "#fine_dine",
-                triggerHook: 1
-              })
-                .setClassToggle("#nav-fine", "active")
-                .addTo(controller);
-
-              var scene = new ScrollMagic.Scene({
-                triggerElement: "#casual_dine",
-                triggerHook: 1
-              })
-                .setClassToggle("#nav-casual", "active")
-                .addTo(controller);
-            </script>
+           
           </section>
         </main>
       </div>
     </div>
   </div>
+  <script src="/js/initial.js"></script>
+  <script src="/js/main.js"></script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("navbar");
+      if (x.className === "nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav";
+      }
+    }
+  </script>
+  <script type="text/javascript">
+    function Expand() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Expand";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "collapse";
+        moreText.style.display = "inline";
+      }
+    }
+
+    //creating a ScrollMagic.Controller instance
+    let controller = new ScrollMagic.Controller();
+
+    //adding scroll triggered text animations
+    var scene = new ScrollMagic.Scene({
+      triggerElement: "#fine_dine",
+      triggerHook: 1,
+      duration:2000
+    })
+      .setClassToggle("#nav-fine", "active")
+      .addTo(controller);
+
+    var scene = new ScrollMagic.Scene({
+      triggerElement: "#casual_dine",
+      triggerHook: 1
+    })
+      .setClassToggle("#nav-casual", "active")
+      .addTo(controller);
+  </script>
 </body>
 
 </html>

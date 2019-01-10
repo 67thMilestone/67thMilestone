@@ -51,7 +51,7 @@
           <li><a href="events.html">2019 events</a> </li>
           <li><a href="starNights.html">2019 Star Nights</a> </li>
           <li><a href="moneyMuffin.html">money muffin</a></li>
-          <li><a class="active" href="#partners">partners</a> </li>
+          <li><a class="active" href="partners.html">partners</a> </li>
           <li><a href="#team">team</a> </li>
           <li><a href="#mood">mood</a> </li>
         </ul>
@@ -292,8 +292,6 @@
     </div>
 
   </div>
-  </div>
-
 
 
 
@@ -372,23 +370,25 @@
     //adding scroll triggered text animations
     var scene = new ScrollMagic.Scene({
       triggerElement: "#signature",
-      triggerHook: 1
+      triggerHook: 1,
+      duration:1900
     })
-      .setClassToggle("#nav-sig", "active")
+      .setClassToggle("#nav_sig", "active")
       .addTo(controller);
 
     var scene = new ScrollMagic.Scene({
       triggerElement: "#premier",
-      triggerHook: 1
+      triggerHook: 1,
+      duration:1850
     })
-      .setClassToggle("#nav-pre", "active")
+      .setClassToggle("#nav_pre", "active")
       .addTo(controller);
 
     var scene = new ScrollMagic.Scene({
       triggerElement: "#classic",
       triggerHook: 1
     })
-      .setClassToggle("#nav-cla", "active")
+      .setClassToggle("#nav_cla", "active")
       .addTo(controller);
 
   </script>
