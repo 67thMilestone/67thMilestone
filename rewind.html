@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <title>Rewind</title>
-	<link rel="stylesheet" href="css/dummy.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Rewind</title>
+  <link rel="stylesheet" href="css/dummy.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/animate.css">
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.3.1/smooth-scrollbar.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
 </head>
-<body class="zindex ">
 
+<body class="zindex ">
+  <div class="white-wipes-animate">
+    <div class="white-wipe"></div>
+    <div class="white-wipe"></div>
+    <div class="white-wipe"></div>
+    <div class="white-wipe"></div>
+    <div class="white-wipe"></div>
+  </div>
+  <div class="Wipe"></div>
   <nav id="navbar" class="nav">
     <div class="topleft-text ">
       <ul>
@@ -33,9 +42,9 @@
       </ul>
     </div>
     <div class="bottomleft-text">
-      <ul>
+      <ul id="nav-list">
         <li><a href="homePage.html">about</a> </li>
-        <li><a class="active" href="#rewind">rewind</a> </li>
+        <li><a class="active" href="rewind.html">rewind</a> </li>
         <li><a href="events.html">2019 events</a> </li>
         <li><a href="starNights.html">2019 Star Nights</a> </li>
         <li><a href="moneyMuffin.html">money muffin</a></li>
@@ -45,139 +54,138 @@
       </ul>
     </div>
     <div class="bottomleft-text bottommost">
-        <ul>
-          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <img onclick="icon()" id="test" src="assets/Hamburger.svg" height="45vh" width="45vw">
-              </a>
-        </ul>
+      <ul>
+        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img onclick="icon()" id="test" src="assets/Hamburger.svg" height="45vh" width="45vw">
+          </a>
+      </ul>
     </div>
   </nav>
   <div id="scroller">
-        <div id="barba-wrapper">
-          <div class="barba-container">
-  <main>
-    <section id="rewind">
-    <div class="head">
-      <img class="img2" src="assets/homePage--image.png" alt="Intro Image">
-      <a>Rewind 2019</a>
+    <div id="barba-wrapper">
+      <div class="barba-container">
+        <main>
+          <section id="rewind">
+            <div class="head">
+              <img class="img2" src="assets/homePage--image.png" alt="Intro Image">
+              <a>Rewind 2019</a>
+            </div>
+
+            <div class="description">
+              <p class="text">
+                67th Milestone ‘19 is the third annual Techno-Cultural and Management fest of BMU. 67th Milestone is a
+                multi-faceted festival
+                which will host a wide range of cultural and technical programs and this edition of the fest is to be
+                hosted from from 8th-10th
+                February 2019. Throughout the three days, it will offer a platform for artists to perform, techie to
+                walk the ramp.
+
+              </p>
+              <p class="text">
+                <span id="dots"></span><span id="more">
+                  With the 67th Milestone only a few months away, every corner of the campus on eavesdropping has some
+                  gossip about 67th Milestone
+                  to offer. Observing the success of previous editions of the ‘67th Milestone’, with a huge
+                  participation from various colleges and
+                  universities, the 67th Milestone ‘19 will strive to surp benchmarks for the Annual fests in India.
+                  67th Milestone uniquely
+                  distinguishes itself to their partners by offering companies an opportunity to hold recruitment
+                  rounds for students. Students, as
+                  well as every other individual present for this promising event, will have the opportunity to witness
+                  performing arts at it’s best,
+                  technical geniuses battling against each other for the throne, and to gain inspiration from and
+                  interact with eminent leaders of
+                  the industry, executives from leading business houses and achievers from their respective spheres.
+                </span>
+              </p>
+              <div onclick="Expand()" class="text" id="myBtn">More Information</div>
+            </div>
+          </section>
+
+          <section class="rewind_2018">
+            <div class="head">2018</div>
+            <div class="description">
+              <img class="img" alt="sunburn" src="assets/DJ.png">
+              2,500 people<br>22 EVENTS<br>3 Star Nights
+            </div>
+            <div class="text-above-image">BML Munjal University is hosting the third annual Techno-Cultural
+              Management fest, "67th Milestone" on 8-10 FEB 2019.<br><br></div>
+            <img class="img" alt="sunburn" src="assets/Band.png">
+
+            <div class="text-below-image">star night 01/PARIKRAMA/</div>
+          </section>
+
+          <section class="rewind_2019">
+            <div class="head">2019</div>
+            <div class="description">
+              <div class="description-text-above-image">COSMOPOLITAN / DISTORTION / GRAIN / RESONANCE /</div>
+              <img class="img" alt="Abstract" src="assets/Abstract.png">
+              2,500 people<br>22 EVENTS<br>3 Star Nights
+            </div>
+          </section>
+
+
+          <section id="theLocalTrain">
+            <img class="img" alt="sunburn" src="assets/Band.png" />
+            <div class="text-below-image">
+              star_night01/theLocalTrain/
+            </div>
+          </section>
+
+          <section id="Zaeden">
+            <img class="img" alt="sunburn" src="assets/Band.png" />
+            <div class="text-below-image">
+              star_night02/Zaeden/
+            </div>
+          </section>
+
+          <section id="unknown">
+            <img class="img" alt="sunburn" src="assets/Band.png" />
+            <div class="text-below-image">
+              star_night03/Unknown/
+            </div>
+          </section>
+
+
+        </main>
+      </div>
     </div>
-
-    <div class="description">
-      <p class="text">
-        67th Milestone ‘19 is the third annual Techno-Cultural and Management fest of BMU. 67th Milestone is a multi-faceted festival
-		    which will host a wide range of cultural and technical programs and this edition of the fest is to be hosted from from 8th-10th
-		    February 2019. Throughout the three days, it will offer a platform for artists to perform, techie to walk the ramp.
-
-      </p>
-      <p class="text">
-        <span id="dots"></span><span id="more">
-          With the 67th Milestone only a few months away, every corner of the campus on eavesdropping has some gossip about 67th Milestone
-			    to offer. Observing the success of previous editions of the ‘67th Milestone’, with a huge participation from various colleges and
-			    universities, the 67th Milestone ‘19 will strive to surp benchmarks for the Annual fests in India. 67th Milestone uniquely
-			    distinguishes itself to their partners by offering companies an opportunity to hold recruitment rounds for students. Students, as
-		 	    well as every other individual present for this promising event, will have the opportunity to witness performing arts at it’s best,
-			    technical geniuses battling against each other for the throne, and to gain inspiration from and interact with eminent leaders of
-			    the industry, executives from leading business houses and achievers from their respective spheres.
-        </span>
-      </p>
-        <div onclick="Expand()" class="text" id="myBtn">More Information</div>
-      </div>
-    </section>
-
-    <section class="rewind_2018">
-      <div class="head">2018</div>
-      <div class="description">
-        <img class="img" alt="sunburn" src="assets/dj.png">
-        2,500 people<br>22 EVENTS<br>3 Star Nights
-      </div>
-      <div class="text-above-image">BML Munjal University is hosting the third annual Techno-Cultural
-        Management fest, "67th Milestone" on 8-10 FEB 2019.<br><br></div>
-        <img class="img" alt="sunburn" src="assets/band.png">
-
-      <div class="text-below-image">star night 01/PARIKRAMA/</div>
-    </section>
-
-    <section class="rewind_2019">
-      <div class="head">2019</div>
-      <div class="description">
-        <div class="description-text-above-image">COSMOPOLITAN / DISTORTION / GRAIN / RESONANCE /</div>
-        <img class="img" alt="Abstract" src="assets/abstract.png">
-        2,500 people<br>22 EVENTS<br>3 Star Nights
-      </div>
-    </section>
-
-
-    <section id="theLocalTrain">
-      <img class="img" alt="sunburn" src="assets/band.png" />
-						<div class="text-below-image">
-							star_night01/theLocalTrain/
-						</div>
-    </section>
-
-    <section id="Zaeden">
-      <img class="img" alt="sunburn" src="assets/band.png" />
-						<div class="text-below-image">
-							star_night02/Zaeden/
-						</div>
-    </section>
-
-    <section id="unknown">
-      <img class="img" alt="sunburn" src="assets/band.png" />
-						<div class="text-below-image">
-							star_night03/Unknown/
-						</div>
-    </section>
-
-
-  </main>
-</div>
-      </div>
   </div>
   <footer>
     &copy;2018 67th Milestone
   </footer>
 
-  <script>
-    let options = {
-      damping: 0.03,
-      thumbMinSize: 20,
-      continuousScrolling: false,
-      alwaysShowTracks: false
-    };
-    let Scrollbar = window.Scrollbar;
-    Scrollbar.init(document.querySelector("#scroller"), options); //initializing smooth scrollbar
-  </script>
-
 
   <script>
     function myFunction() {
-    var x = document.getElementById("navbar");
-    if (x.className === "nav") {
-      x.className += " responsive";
-    } else {
-      x.className = "nav";
-    }
+      var x = document.getElementById("navbar");
+      if (x.className === "nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav";
+      }
     }
   </script>
 
   <script type="text/javascript">
-  function Expand() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+    function Expand() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
 
-  if (dots.style.display === "none") {
-  dots.style.display = "inline";
-  btnText.innerHTML = "Expand";
-  moreText.style.display = "none";
-  } else {
-  dots.style.display = "none";
-  btnText.innerHTML = "collapse";
-  moreText.style.display = "inline";
-  }
-  }
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Expand";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "collapse";
+        moreText.style.display = "inline";
+      }
+    }
   </script>
+  <script src="js/main.js"></script>
 
+</body>
 
-  </body>
 </html>

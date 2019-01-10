@@ -1,6 +1,15 @@
 $(document).ready(function () {
     Barba.Pjax.start();
     Barba.Prefetch.init();
+    let currentElemnt;
+    let nextElement;
+
+    for (let i = 0; i < $('#nav-list li').length; i++) {
+        if ($('#nav-list li a').eq(i).hasClass('active')) {
+            currentElemnt = $('#nav-list li a').eq(i)
+            break;
+        }
+    }
     let Elclass;  //stores the class of link clicked for transition
 
     //options for smooth scrollbar
@@ -51,7 +60,10 @@ $(document).ready(function () {
                     opacity: 1,
                     onComplete: function () {
                         _this.done();
+                        currentElemnt.removeClass('active');
                         $('html').css('pointer-events', 'auto');
+                        nextElement.addClass('active');
+                        currentElemnt = nextElement;
                     }
                 }, "-=0.4");
         }
@@ -90,6 +102,9 @@ $(document).ready(function () {
                     onStart: function () {
                         _this.done();
                         $('html').css('pointer-events', 'auto');
+                        currentElemnt.removeClass('active');
+                        nextElement.addClass('active');
+                        currentElemnt = nextElement;
                     }
                 }, "-=0.7")
                 .set(".Wipe", { display: 'none' });
@@ -98,7 +113,8 @@ $(document).ready(function () {
 
     //storing class of link clicked for transition to show different transition based on link clicked
     Barba.Dispatcher.on('linkClicked', function (HTMLElement, MouseEvent) {
-        Elclass = $(HTMLElement).attr('class');
+        // $(HTMLElement).addClass('active');
+        nextElement = $(HTMLElement);
     });
 
     //returns transition to be used
