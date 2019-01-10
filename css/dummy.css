@@ -1,8 +1,3 @@
-*{
-  /* font-family: "Comic Sans MS", cursive, sans-serif; */
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-}
-
 /* body of the page
 need not to be changed */
 body {
@@ -10,6 +5,7 @@ body {
   background-color: #fffcf8;
   color: #1a1a1a;
   z-index: -1;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 /* .nav-dark{
@@ -124,9 +120,43 @@ i.e. the Expand of the navbar */
   background-color: #1a1a1a;
 } */
 
-.bottomleft-text-dark a:hover,.bottomleft-text-dark .active{
+/* .bottomleft-text-dark a:hover,.bottomleft-text-dark .active{
   color: #fff;
   font-weight: bold;
+} */
+
+.nav-list-about,
+.nav-list-rewind,
+.nav-list-events,
+.nav-list-starNights,
+.nav-list-moneyMuffin,
+.nav-list-partners,
+.nav-list-team,
+.nav-list-mood{
+  position: relative;
+}
+
+.nav-list-about a:after,
+.nav-list-rewind a:after,
+.nav-list-events a:after,
+.nav-list-starNights a:after,
+.nav-list-moneyMuffin a:after,
+.nav-list-partners a:after,
+.nav-list-team a:after,
+.nav-list-mood a:after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  /* visibility: hidden; */
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 
@@ -276,4 +306,111 @@ section {
 .description-text-above-image{
   text-transform: uppercase;
   text-align: right;
+}
+
+/* events */
+.position{
+    position: relative;
+    left: -2%;
+    color: #000000;
+    top: 5vh;
+}
+.position1{
+    position: relative;
+    left: 18%;
+    color: #000000;
+    top: 5vh;
+}
+
+.register a, .register a:hover{
+  color: #1a1a1a;
+  text-decoration: none;
+  position: relative;
+}
+
+.register{
+  position: relative;
+}
+
+.register :before{
+  content:"";
+  position: absolute;
+  width:10%;
+  height:2px;
+  bottom: 0;
+  left: 0;
+  visibility: visible;
+  background-color: #000;
+  color: #ccc;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(1);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  overflow: hidden;
+}
+.register :hover:before{
+  width: 100%;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+overflow: hidden;
+}
+
+.heading{
+    font-weight: bolder;
+    /* display: inline-block; */
+    font-size: 50px;
+    font-family: "Playfair Display";
+    text-transform: capitalize;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev{
+  float: left;
+  margin-left: -5vw;
+  cursor: pointer;
+}
+
+.txt-prev{
+  float: right;
+  margin-top: 2vh;
+  margin-left: 2vw;
+}
+
+.next {
+  float: right;
+  /* right: 0; */
+  border-radius: 3px 0 0 3px;
+  margin-right: -5vw;
+  cursor: pointer;
+}
+
+.txt-next{
+  float: left;
+  margin-top: 2vh;
+  margin-right: 2vw;
+}
+
+.event-active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
