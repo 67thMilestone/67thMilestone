@@ -36,7 +36,7 @@ $(document).ready(function () {
             $('html').css('pointer-events', 'none');
             var outTransition = new TimelineMax();
             outTransition
-                .to(window, 0.3, { scrollTo: { y: 0 } })
+                .to('.scroll-content', 1, { css: { y: 0 }, onComplete: () => { $('.scroll-content').attr('style', 'transform: translate3d(0px, 0px, 0px)') } })
                 .set(".white-wipe", { display: 'block', y: "0%" })
                 .staggerFromTo(".white-wipe", 1, { width: "0%" }, {
                     width: "100%",
@@ -81,6 +81,7 @@ $(document).ready(function () {
             let deferred = Barba.Utils.deferred();
             var outTransition = new TimelineMax();
             outTransition
+                .to('.scroll-content', 1, { css: { 'transform': 'translate3d(0px, 0px, 0px)' } })
                 .set(".Wipe", { display: 'block', y: "-100%", onComplete: () => { deferred.resolve(); } });
             return deferred.promise;
         },
@@ -104,7 +105,6 @@ $(document).ready(function () {
                         currentElemnt = nextElement;
                     }
                 }, "-=0.7")
-                .to('#scroller', 0.3, { scrollTo: { y: 0 } })
                 .set(".Wipe", { display: 'none' });
         }
     });
