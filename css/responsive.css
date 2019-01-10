@@ -6,8 +6,28 @@
 .rewind_2018 {
   margin-top: 60vh;
 }
-main {
-  height: calc(100vh - 75px - 50px);
+.event {
+  margin-top: 20vh;
+}
+
+.img,
+.img2,
+.img3 {
+  width: 130%;
+  height: auto;
+  padding: 0 5% 2% 0;
+  position: relative;
+  margin-top: 5vh;
+}
+.rewind_2018 {
+  margin-top: 40vh;
+}
+/* change the beginning image classes to img2 */
+.img2 {
+  margin-top: 0vh;
+}
+.img3 {
+  margin-top: 0vh;
 }
 
 @media screen and (min-width: 601px) {
@@ -58,30 +78,16 @@ main {
     margin-top: -1vh;
     margin-bottom: 5vh;
   }
-  .img,
-  .img2,
-  .img3 {
-    width: 130%;
-    height: auto;
-    padding: 0 5% 2% 0;
-    position: relative;
-    margin-top: 5vh;
+
+  .img {
+    /* padding-top: 1vh; */
   }
-  .rewind_2018 {
-    margin-top: 40vh;
-  }
-  /* change the beginning image classes to img2 */
-  .img2 {
-    margin-top: 0vh;
-  }
-  .img3 {
-    margin-top: 0vh;
-  }
+
   .description-text-above-image {
     font-size: 1.5vh;
     margin-top: -4vh;
     margin-right: -12vw;
-    margin-bottom: -4vh;
+    margin-bottom: -3.5vh;
   }
   .text-above-image {
     margin-bottom: -6vh;
