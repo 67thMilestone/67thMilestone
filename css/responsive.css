@@ -105,7 +105,7 @@
   }
   /* image dimensions for all the sizes */
   /* should not be changed */
-  .img, img2 {
+  .img, .img2 {
     /* dont change the width since its directly corresponding to the main class */
     width: 100%;
     /* adjust it if u want */
@@ -170,7 +170,7 @@
     margin-top: 3vh;
     margin-bottom: -4vh;
   }
-  .img, img2{
+  .img, .img2{
     margin-top: 5vh;
   }
   .text-below-image{
@@ -196,7 +196,7 @@
     margin-top: 3vh;
     margin-bottom: -4vh;
   }
-  .img, img2{
+  .img, .img2{
     margin-top: 5vh;
   }
   .text-below-image{
@@ -216,7 +216,7 @@
     margin-top: 3vh;
     margin-bottom: -6vh;
   }
-  .img, img2{
+  .img, .img2{
     margin-top: 5vh;
   }
   .text-below-image{
