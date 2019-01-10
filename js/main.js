@@ -34,10 +34,9 @@ $(document).ready(function () {
         startTransition: function () {
             let deferred = Barba.Utils.deferred();
             $('html').css('pointer-events', 'none');
-            $('html,body').animate({ scrollTop: 0 }, 'slow');
             var outTransition = new TimelineMax();
             outTransition
-                //.to(window, 1, {scrollTo:0})
+                .to(window, 0.3, { scrollTo: { y: 0 } })
                 .set(".white-wipe", { display: 'block', y: "0%" })
                 .staggerFromTo(".white-wipe", 1, { width: "0%" }, {
                     width: "100%",
@@ -80,11 +79,9 @@ $(document).ready(function () {
         startTransition: function () {
             $('html').css('pointer-events', 'none');
             let deferred = Barba.Utils.deferred();
-            $('html,body').animate({ scrollTop: 0 }, 'slow');
             var outTransition = new TimelineMax();
             outTransition
-                //.to(document.body, 1, {scrollTo: 0,})
-                .set(".Wipe", { display: 'block', y: "-100%", onComplete: () => { deferred.resolve(); } })
+                .set(".Wipe", { display: 'block', y: "-100%", onComplete: () => { deferred.resolve(); } });
             return deferred.promise;
         },
 
@@ -107,6 +104,7 @@ $(document).ready(function () {
                         currentElemnt = nextElement;
                     }
                 }, "-=0.7")
+                .to('#scroller', 0.3, { scrollTo: { y: 0 } })
                 .set(".Wipe", { display: 'none' });
         }
     });
