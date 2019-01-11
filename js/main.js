@@ -81,7 +81,7 @@ $(document).ready(function () {
             let deferred = Barba.Utils.deferred();
             var outTransition = new TimelineMax();
             outTransition
-                .to('.scroll-content', 1, { css: { 'transform': 'translate3d(0px, 0px, 0px)' } })
+                .to('.scroll-content', 1, { css: { y: 0 } })
                 .set(".Wipe", { display: 'block', y: "-100%", onComplete: () => { deferred.resolve(); } });
             return deferred.promise;
         },

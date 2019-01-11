@@ -58,6 +58,10 @@ need not to be changed */
     display: block;
     background-color: #fffcf8;
   }
+
+  .nav, .nav-dark {
+    z-index: -2;
+  }
 }
 
 /* responsive humburger from js
