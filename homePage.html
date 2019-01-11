@@ -66,13 +66,12 @@
         <ul>
           <li>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <div class="edit-button">
-                    <img src="assets/Hamburger.svg" height="45vh" width="45vw">
-                    </div>
-                    <div class="ok-button">
-                    <img src="/cancel-music.svg" height="45vh" width="45vw" >
-                    </div>       
-                
+              <div class="edit-button">
+                <img src="assets/Hamburger.svg" height="45vh" width="45vw" />
+              </div>
+              <div class="ok-button">
+                <img src="/cancel-music.svg" height="45vh" width="45vw" />
+              </div>
             </a>
           </li>
         </ul>
@@ -246,6 +245,7 @@
                 </div>
               </div>
             </section>
+
             <section id="theLocalTrain">
               <img class="img" alt="sunburn" src="assets/TheLocalTrain.png" />
               <div class="text-below-image">star_night01/theLocalTrain/</div>
@@ -254,9 +254,11 @@
               <img class="img" alt="sunburn" src="assets/Band.png" />
               <div class="text-below-image">star_night02/Zaeden/</div>
             </section>
-            <section id="unknown">
-              <img class="img" alt="sunburn" src="assets/Band.png" />
-              <div class="text-below-image">star_night03/Unknown/</div>
+            <section id="remove-bottom">
+              <section id="unknown">
+                <img class="img" alt="sunburn" src="assets/Band.png" />
+                <div class="text-below-image">star_night03/Unknown/</div>
+              </section>
             </section>
           </main>
         </div>
@@ -266,7 +268,7 @@
     <script src="/js/main.js"></script>
     <script>
       function myFunction() {
-        $('.nav, .nav-dark').css('z-index','100');
+        $(".nav, .nav-dark").css("z-index", "100");
         var x = document.getElementById("navbar");
         if (x.className === "nav") {
           x.className += " responsive";
@@ -293,13 +295,12 @@
       }
     </script>
     <script>
-        $('.ok-button').hide();
-        
-        $('.edit-button,.ok-button').on('click',function(){
-        
-          $('.edit-button,.ok-button').toggle()
-        });
-        </script>
+      $(".ok-button").hide();
+
+      $(".edit-button,.ok-button").on("click", function() {
+        $(".edit-button,.ok-button").toggle();
+      });
+    </script>
     <script type="text/javascript">
       function nextExpand() {
         var dots = document.getElementById("dots1");

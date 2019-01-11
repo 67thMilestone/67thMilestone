@@ -9,7 +9,9 @@
 .event {
   margin-top: 20vh;
 }
-
+#remove-bottom {
+  padding-bottom: 6vh;
+}
 .img,
 .img2,
 .img3 {
@@ -22,8 +24,7 @@
 .rewind_2018 {
   margin-top: 40vh;
 }
- change the beginning image classes to img2 
-.img2 {
+change the beginning image classes to img2 .img2 {
   margin-top: 0vh;
 }
 .rewind_2018 .img {
@@ -47,7 +48,7 @@
   li .active {
     font-size: 18px;
   }
-  .z-index{
+  .z-index {
     z-index: 100;
     position: fixed;
   }
@@ -163,12 +164,12 @@
   .bottomleft-text-dark a:hover {
     font-size: 25px;
   }
-  .right_float{
-    float:left;
-    margin-top:0vh;
+  .right_float {
+    float: left;
+    margin-top: 0vh;
   }
 
-  #navbar{
+  #navbar {
     z-index: 101;
   }
   li .active {
