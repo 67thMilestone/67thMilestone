@@ -1,37 +1,16 @@
-/* the below code can be used to override bounce behaviour */
-/* html,
-body {
-  height: 100%;
-  overflow: hidden;
-}
-
-#mainContainer {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: auto;
-} */
-
-.container-fluid {
-  /* // complete body css */
-  margin: 0;
-  padding: 0;
+ .container-fluid{
+  margin: 0px;
+  padding: 0px;
   background-color: #fffcf8;
   color: #1a1a1a;
   font-family: sans-serif;
 }
 
-.dark,
-.head-dark {
+.dark, .head-dark{
   background-color: #1a1a1a;
   color: white;
 }
 
-.rewind_2019 {
-  margin-top: 50vh;
-}
 
 ul {
   text-transform: uppercase;
@@ -40,13 +19,12 @@ ul {
   padding: 0;
 }
 
-.navbar {
+.navbar{
   text-transform: uppercase;
 }
 
 /* top-left of navbar */
-.topleft-text,
-.topleft-text-dark {
+.topleft-text, .topleft-text-dark {
   margin-left: 2vw;
   top: 5vh;
   height: 20vh;
@@ -54,118 +32,107 @@ ul {
   font-weight: medium;
   position: fixed;
 }
-.topleft-text-dark {
-  z-index: 10;
-}
 
-.topleft-text a {
+.topleft-text a{
   color: #1a1a1a;
 }
 
-.topleft-text a:hover,
-.topleft-text-dark a:hover {
+.topleft-text a:hover, .topleft-text-dark a:hover{
   color: #808080;
   text-decoration: none;
 }
 
-.topleft-text-dark,
-.topleft-text-dark a {
+.topleft-text-dark, .topleft-text-dark a{
   color: #fff;
   text-decoration: none;
 }
 
 @media screen and (min-width: 601px) {
-  .topleft-text,
-  .topleft-text-dark {
+  .topleft-text, .topleft-text-dark {
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topleft-text, .topleft-text-dark {
+    font-size: 10px;
   }
 }
 
 /* bottom-left of navbar */
-.bottomleft-text,
-.bottomleft-text-dark {
+.bottomleft-text, .bottomleft-text-dark {
   top: 5vh;
   height: 20vh;
   width: 20vw;
   top: 38vh;
   position: fixed;
   margin-left: 2vw;
-  z-index: 100;
 }
 
-.bottomleft-text a,
-.bottomleft-text-dark a {
-  color: #777777;
+.bottomleft-text a, .bottomleft-text-dark a{
+  color: #7a7977;
   position: relative;
 }
 
-.bottomleft-text a:hover,
-.bottomleft-text-dark a:hover {
+.bottomleft-text a:hover, .bottomleft-text-dark a:hover{
   color: #1a1a1a;
   font-weight: bold;
   text-decoration: none;
+ }
+
+.bottomleft-text-dark a:hover, .bottomleft-text-dark li .active{
+   color: #fff;
 }
 
-.bottomleft-text-dark a:hover,
-.bottomleft-text-dark li .active {
-  color: #fff;
-}
-
-li .active {
+li .active{
   color: #1a1a1a;
   font-weight: bold;
 }
 
-.bottommost {
-  top: 80vh;
+.bottommost{
+  top:80vh;
 }
 
 @media screen and (min-width: 601px) {
-  .bottomleft-text,
-  .bottomleft-text-dark {
+  .bottomleft-text, .bottomleft-text-dark{
     font-size: 17px;
   }
-  li .active {
+  li .active{
     font-size: 18px;
   }
 }
 @media screen and (max-width: 600px) {
-  .bottomleft-text,
-  .bottomleft-text-dark {
+  .bottomleft-text, .bottomleft-text-dark{
     font-size: 11px;
   }
-  li .active {
+  li .active{
     font-size: 12px;
   }
 }
 
 /* main-body of webpage */
 /* major heading */
-.head,
-.head-dark {
+.head, .head-dark{
   margin-left: 25vw;
   margin-right: 20vw;
   font-weight: bold;
   /* position: relative; */
   text-transform: uppercase;
-  margin-top: 10vh;
+  margin-top:10vh;
 }
 
 @media screen and (min-width: 601px) {
-  .head,
-  .head-dark {
+  .head, .head-dark{
     font-size: 50px;
   }
 }
 @media screen and (max-width: 600px) {
-  .head,
-  .head-dark {
+  .head, .head-dark{
     font-size: 25px;
     margin-left: 30vw;
   }
 }
 
-.heading {
+.heading{
   margin-left: 25vw;
   margin-right: 20vw;
   font-weight: bold;
@@ -176,246 +143,116 @@ li .active {
 }
 
 @media screen and (min-width: 601px) {
-  .heading {
+  .heading{
     font-size: 50px;
   }
 }
 @media screen and (max-width: 600px) {
-  .heading {
+  .heading{
     font-size: 27px;
     margin-left: 30vw;
   }
 }
 
 /* descriptions */
-.description,
-.description-dark {
+.description, .description-dark{
   color: #1a1a1a;
   text-align: justify;
   position: relative;
 }
 
-.description-dark {
+.description-dark{
   color: #ccc;
 }
 
-.text {
+/* .text{
   margin-top: 8vh;
-}
+  margin-left: 3vw;
+} */
 
 @media screen and (min-width: 601px) {
-  .description,
-  .description-dark {
+  .description, .description-dark{
     margin-left: 25vw;
     margin-right: 30vw;
     font-size: 22px;
   }
-  .description a,
-  .description-dark a {
+  .description a, .description-dark a{
     font-size: 18px;
   }
 }
 @media screen and (max-width: 600px) {
-  .description,
-  .description-dark {
+  .description, .description-dark{
     font-size: 13px;
     margin-right: 15vw;
     margin-left: 30vw;
   }
-  .description a,
-  .description-dark a {
+  .description a, .description-dark a{
     font-size: 11px;
   }
 }
 
+
 /* residue of webpage */
-.residue,
-.residue:hover {
-  margin-left: 25vw;
+.residue, .residue:hover{
+  /* margin-left: 25vw; */
   /* margin-right: 20vw; */
-  color: #1a1a1a;
-  font-size: 20px;
-  position: relative;
+  color: gray;
+  font-size: 14px;
+  position: absolute;
+  top: 64vh;
+  font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
 }
 
-.residue a,
-.residue a:hover {
-  color: #1a1a1a;
-  text-decoration: none;
+.residue a,.residue a:hover{
+    color: #1a1a1a;
+    text-decoration: none;
 }
 
-@media screen and (min-width: 601px) {
-  .residue {
+/* @media screen and (min-width: 601px) {
+  .residue{
     font-size: 20px;
   }
-  .residue:hover {
+  .residue:hover{
     font-size: 21px;
   }
 }
 @media screen and (max-width: 600px) {
-  .residue,
-  .residue:hover {
+  .residue, .residue:hover{
     font-size: 13px;
     margin-right: 25vw;
     margin-left: 30vw;
   }
-  .residue:hover {
+  .residue:hover{
     font-size: 14px;
-  }
+  } */
+
 }
 
 /* image css */
-.img {
+.img{
   width: 130%;
   height: auto;
   padding: 0 5% 2% 0;
   position: relative;
 }
-
-/* Miscellaneous CSS*/
-
-/* CSS for home page */
-@media screen and (min-width: 601px) {
-  .rewind {
-    margin-top: 30vh;
-    font-size: 50px;
-    font-weight: bold;
+@media only screen and (orientation:landscape) and(max-width:700){
+  .position1{
+      left: 49%;
   }
-}
-
-.description-text-above-image {
-  margin-right: 12vw;
-  margin-top: 25vh;
-}
-
-.text-above-image {
-  float: left;
-}
-
-.text-below-image,
-.text-above-image {
-  margin-right: -11vw;
-  text-transform: uppercase;
-}
-.text-above-image {
-  margin-left: 30vw;
-}
-
-.text-below-image {
-  margin-bottom: 18vh;
-}
-
-.event {
-  margin-top: 30vh;
-}
-
-@media screen and (min-width: 601px) {
-  .text-below-image,
-  .text-above-image {
-    font-size: 15px;
+  .position{
+      left: -3.5%;
   }
-}
-@media screen and (max-width: 600px) {
-  .text-below-image,
-  .text-above-image {
-    font-size: 10px;
+  .fixedSize{
+      width: 430px;
+      height: 300px;
   }
-}
-
-#myBtn-dark,
-#myBtn-dark1 {
-  text-transform: uppercase;
-  background-color: #1a1a1a;
-  color: #1a1a1a;
-  position: relative;
-  color: #9d9b99;
-}
-
-#myBtn-dark:hover,
-#myBtn-dark1:hover {
-  text-decoration: underline;
-  background-color: #1a1a1a;
-  border-color: none;
-  cursor: pointer;
-}
-
-#more,
-#more1 {
-  display: none;
-}
-
-@media screen and (min-width: 601px) {
-  #myBtn-dark,
-  #myBtn-dark1 {
-    font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #myBtn-dark,
-  #myBtn-dark1 {
-    font-size: 10px;
-  }
-}
-
-/* CSS for events */
-.list {
-  text-align: left;
-  /* color: #fff; */
-  margin-top: 8vh;
-  font-size: 20px;
-  position: relative;
-}
-
-.list a,
-.list a:hover {
-  color: #fff;
-}
-
-.list a:hover {
-  /* color: #fff; */
-  font-weight: bold;
-}
-
-@media screen and (min-width: 601px) {
-  .list {
-    font-size: 22px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .list {
-    font-size: 13px;
-  }
-}
-
-.event_img {
-  margin-top: 8vh;
-  /* margin-bottom: 8vh; */
-}
-
-@media screen and (min-width: 601px) {
-  .left {
-    margin-left: 25vw;
-    font-size: 18px;
-  }
-  .right {
-    margin-left: 22vw;
-    font-size: 18px;
-    color: #9d9b99;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .left {
-    margin-left: 25vw;
-    font-size: 12px;
-  }
-  .right {
-    margin-left: 20vw;
-    font-size: 12px;
-    color: #9d9b99;
+  p{
+      color:#000000;
+      text-align: justify;
+      display: inline-block;
+      font-size: 10px;
+      margin-top:1.5vh;
   }
 }
