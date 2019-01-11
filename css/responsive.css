@@ -1,124 +1,153 @@
 /* make sure to refer dummy.css */
 
-@media screen and (min-width: 769px) {
-/* do not change anything is this */
+.rewind_2019 {
+  margin-top: 60vh;
+}
+.rewind_2018 {
+  margin-top: 60vh;
+}
+.event {
+  margin-top: 20vh;
+}
+
+.img,
+.img2,
+.img3 {
+  width: 130%;
+  height: auto;
+  padding: 0 5% 2% 0;
+  position: relative;
+  margin-top: 5vh;
+}
+.rewind_2018 {
+  margin-top: 40vh;
+}
+/* change the beginning image classes to img2 */
+.img2 {
+  margin-top: 0vh;
+}
+.img3 {
+  margin-top: 0vh;
+}
+
+@media screen and (min-width: 601px) {
+  /* do not change anything is this */
   main {
     margin-left: 27vw;
     margin-right: 30vw;
     margin-bottom: 10vh;
   }
-  .navbar{
-    width:10vw;
+  .navbar {
+    width: 10vw;
   }
-  .top-left{
+  .top-left {
     font-size: 15px;
   }
-  .bottomleft-text, .bottomleft-text1{
-     font-size: 17px;
-   }
-   li .active{
-     font-size: 18px;
-   }
-   .bottommost {
-     margin-top: 13vh;
-   }
-   .head, .head-dark{
-      font-size: 50px;
-    }
-    .description {
-      font-size: 22px;
-      margin-bottom: 5vh;
-    }
-    .description a{
-      font-size: 18px;
-    }
-    .cost{
-      font-size: 30px;
-    }
-    #myBtn,#myBtn1,#myBtn2{
-      font-size: 15px;
-    }
-    .text-below-image{
-      margin-right: -12vw;
-      margin-top: -2vh;
-      margin-bottom: 5vh;
-    }
-    .img, .img2 {
-      width: 130%;
-      height: auto;
-      padding: 0 5% 2% 0;
-      position: relative;
-      margin-top: 5vh;
-    }
-    /* change the beginning image classes to img2 */
-    .img2{
-      margin-top: 0vh;
-    }
-    .description-text-above-image{
-      font-size: 18px;
-      margin-top: -4vh;
-      margin-right: -12vw;
-      margin-bottom: -4vh;
-    }
-    .text-above-image{
-      margin-bottom: -6vh;
-    }
-  .nav-list-about a:hover:after{
-      width: 38%;
-      left: 0;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-      visibility: visible;
-    }
-    .nav-list-rewind a:hover:after{
-      width: 45%;
-      left: 0;
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-    }
-    .nav-list-events a:hover:after{
-      width: 74%;
-      left: 0;
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-    }
-    .nav-list-starNights a:hover:after{
-      width: 93%;
-      left: 0;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-      visibility: visible;
-    }
-    .nav-list-moneyMuffin a:hover:after{
-      width: 86%;
-      left: 0;
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-    }
-    .nav-list-partners a:hover:after{
-      width: 56%;
-      left: 0;
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-    }
-    .nav-list-team a:hover:after{
-      width: 31%;
-      left: 0;
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-    }
-    .nav-list-mood a:hover:after {
-      width: 36%;
-      left: 0;
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-    }
+  .bottomleft-text,
+  .bottomleft-text1 {
+    font-size: 17px;
+  }
+  li .active {
+    font-size: 18px;
+  }
+  .bottommost {
+    margin-top: 13vh;
+  }
+  .head,
+  .head-dark {
+    font-size: 50px;
+    /* margin-top: 40vh; */
+  }
+  .description {
+    font-size: 22px;
+    margin-bottom: 5vh;
+  }
+  .description a {
+    font-size: 18px;
+  }
+  .cost {
+    font-size: 30px;
+  }
+  #myBtn,
+  #myBtn1,
+  #myBtn2 {
+    font-size: 15px;
+  }
+  .text-below-image {
+    margin-right: -12.5vw;
+    margin-top: -1vh;
+    margin-bottom: 5vh;
+  }
+
+  .img {
+    /* padding-top: 1vh; */
+  }
+
+  .description-text-above-image {
+    font-size: 1.5vh;
+    margin-top: -4vh;
+    margin-right: -12vw;
+    margin-bottom: -3.5vh;
+  }
+  .text-above-image {
+    margin-bottom: -6vh;
+  }
+  .nav-list-about a:hover:after {
+    width: 38%;
+    left: 0;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    visibility: visible;
+  }
+  .nav-list-rewind a:hover:after {
+    width: 45%;
+    left: 0;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  .nav-list-events a:hover:after {
+    width: 74%;
+    left: 0;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  .nav-list-starNights a:hover:after {
+    width: 93%;
+    left: 0;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    visibility: visible;
+  }
+  .nav-list-moneyMuffin a:hover:after {
+    width: 86%;
+    left: 0;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  .nav-list-partners a:hover:after {
+    width: 56%;
+    left: 0;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  .nav-list-team a:hover:after {
+    width: 31%;
+    left: 0;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  .nav-list-mood a:hover:after {
+    width: 36%;
+    left: 0;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -126,42 +155,48 @@
   .topleft-text {
     font-size: 12px;
   }
-  .bottomleft-text a, .bottomleft-text a:hover, .bottomleft-text-dark a, .bottomleft-text-dark a:hover{
+  .bottomleft-text a,
+  .bottomleft-text a:hover,
+  .bottomleft-text-dark a,
+  .bottomleft-text-dark a:hover {
     font-size: 25px;
   }
-  li .active{
+  li .active {
     font-size: 27px;
   }
   .bottommost {
     margin-top: 20vh;
   }
   /* all major headings....subheading needed to added */
-  .head{
+  .head {
     font-size: 33px;
     /* margin-left: 30vw; */
   }
   /* description of the text */
-  .description{
+  .description {
     font-size: 18px;
     /* margin-right: 25vw;
     margin-left: 30vw; */
   }
-  .description a{
+  .description a {
     font-size: 18px;
   }
-  .subheading{
+  .subheading {
     font-size: 25px;
   }
   /* money muffin cost */
-  .cost{
+  .cost {
     font-size: 23px;
   }
-  #myBtn,#myBtn1,#myBtn2{
+  #myBtn,
+  #myBtn1,
+  #myBtn2 {
     font-size: 12px;
   }
   /* image dimensions for all the sizes */
   /* should not be changed */
-  .img, img2 {
+  .img,
+  img2 {
     /* dont change the width since its directly corresponding to the main class */
     width: 100%;
     /* adjust it if u want */
@@ -173,49 +208,49 @@
   /* .event{
     padding-bottom: 10vh;
   } */
-  .nav-list-about a:hover:after{
+  .nav-list-about a:hover:after {
     width: 14vw;
     left: 0;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
     visibility: visible;
   }
-  .nav-list-rewind a:hover:after{
+  .nav-list-rewind a:hover:after {
     width: 17vw;
     left: 0;
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
-  .nav-list-events a:hover:after{
+  .nav-list-events a:hover:after {
     width: 26vw;
     left: 0;
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
-  .nav-list-starNights a:hover:after{
+  .nav-list-starNights a:hover:after {
     width: 38vw;
     left: 0;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
     visibility: visible;
   }
-  .nav-list-moneyMuffin a:hover:after{
+  .nav-list-moneyMuffin a:hover:after {
     width: 32vw;
     left: 0;
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
-  .nav-list-partners a:hover:after{
+  .nav-list-partners a:hover:after {
     width: 21vw;
     left: 0;
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
-  .nav-list-team a:hover:after{
+  .nav-list-team a:hover:after {
     width: 12vw;
     left: 0;
     visibility: visible;
@@ -233,14 +268,15 @@
 
 @media screen and (max-width: 768px) {
   /* content margin */
-    main {
-      margin-left: 10vw;
-      margin-right: 10vw;
-    }
+  main {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
 
   /* hamburger */
- .nav ul li a.icon,.nav-dark ul li a.icon {
-   /*  dont change */
+  .nav ul li a.icon,
+  .nav-dark ul li a.icon {
+    /*  dont change */
     margin-top: -20vh;
     /* dont change */
     margin-left: -12vw;
@@ -250,93 +286,101 @@
     padding-left: 10vw;
   }
 
-  .topleft-text, .topleft-text-dark, .bottomleft{
+  .topleft-text,
+  .topleft-text-dark,
+  .bottomleft {
     /* to hide the text */
     display: none;
   }
-  .nav ul li a, .nav-dark ul li a{
+  .nav ul li a,
+  .nav-dark ul li a {
     /* links of navbar */
-    padding: .1vw;
+    padding: 0.1vw;
     text-decoration: none;
     width: 100vw;
   }
-  .description-text-above-image{
+  .description-text-above-image {
     font-size: 15px;
     margin-top: -3vh;
     margin-bottom: 1vh;
   }
-  .text-above-image{
+  .text-above-image {
     font-size: 15px;
     margin-bottom: -2vh;
   }
-  .text-below-image{
+  .text-below-image {
     font-size: 15px;
     margin-top: -2vh;
     margin-bottom: 8vh;
   }
 }
 
-@media screen and (max-width: 360px){
-  .description-text-above-image{
+@media screen and (max-width: 360px) {
+  .description-text-above-image {
     font-size: 10px;
     margin-top: 3vh;
     margin-bottom: -4vh;
   }
-  .img, img2{
+  .img,
+  img2 {
     margin-top: 5vh;
   }
-  .text-below-image{
+  .text-below-image {
     font-size: 11px;
     margin-top: 0;
     /* margin-bottom: 8vh; */
   }
-  .text-above-image{
+  .text-above-image {
     font-size: 15px;
     margin-bottom: -6vh;
   }
-  .text, .description{
+  .text,
+  .description {
     text-align: left;
   }
 }
 
-@media screen and (max-width: 441px){
-  .text, .description{
+@media screen and (max-width: 441px) {
+  .text,
+  .description {
     text-align: justify;
   }
-  .description-text-above-image{
+  .description-text-above-image {
     font-size: 10px;
     margin-top: 3vh;
     margin-bottom: -4vh;
   }
-  .img, img2{
+  .img,
+  img2 {
     margin-top: 5vh;
   }
-  .text-below-image{
+  .text-below-image {
     font-size: 11px;
     margin-top: 0;
     /* margin-bottom: 8vh; */
   }
-  .text-above-image{
+  .text-above-image {
     font-size: 15px;
     margin-bottom: -6vh;
   }
 }
 
-@media screen and (max-width: 320px){
-  .description-text-above-image{
+@media screen and (max-width: 320px) {
+  .description-text-above-image {
     font-size: 10px;
     margin-top: 3vh;
     margin-bottom: -6vh;
   }
-  .img, img2{
+  .img,
+  img2 {
     margin-top: 5vh;
   }
-  .text-below-image{
+  .text-below-image {
     font-size: 11px;
     margin-top: 0;
     /* margin-bottom: 8vh; */
   }
-  .text-above-image{
+  .text-above-image {
     font-size: 15px;
     margin-bottom: -6vh;
   }
