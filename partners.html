@@ -29,6 +29,9 @@
     <div class="white-wipe"></div>
   </div>
   <div class="Wipe"></div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <img id="test" src="assets/Hamburger.svg" height="45vh" width="45vw"></i>
+  </a>
   <div id="scroller">
     <nav id="navbar" class="nav">
       <div class="topleft-text">
@@ -61,12 +64,6 @@
           <li><a id="nav_sig" href="#signature">signature</a> </li>
           <li><a id="nav_pre" href="#premier">premium</a> </li>
           <li><a id="nav_cla" href="#classic">classic</a> </li>
-        </ul>
-        <ul>
-          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <img onclick="icon()" id="test" src="assets/Hamburger.svg" height="45vh" width="45vw"></i>
-            </a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -302,8 +299,10 @@
     function myFunction() {
       var x = document.getElementById("navbar");
       if (x.className === "nav") {
+        $('.nav, .nav-dark').css('z-index', '100');
         x.className += " responsive";
       } else {
+        $('.nav, .nav-dark').css('z-index', '-2');
         x.className = "nav";
       }
     }

@@ -8,6 +8,9 @@ body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
+#test {
+  z-index: 101 !important;
+}
 /* .nav-dark{
   background-color: #1a1a1a;
   color: #fff;
@@ -62,6 +65,10 @@ need not to be changed */
   .nav, .nav-dark {
     z-index: -2;
   }
+
+  .icon, #test {
+    z-index: 10000 !important;
+  }
 }
 
 /* responsive humburger from js
@@ -78,6 +85,7 @@ i.e. the Expand of the navbar */
     right: 0;
     left: 80vw;
     top: 0;
+    margin-right: -100vw;
     margin-top: 2vh;
   }
 
@@ -170,10 +178,10 @@ main,  main .dark{
   margin-left: 25vw;
 }
 
-section {
-  /* height: 100%;
-  width: 100%; */
-}
+/* section {
+   height: 100%;
+  width: 100%; 
+} */
 
 /* responsive */
 .head, .head-dark{
