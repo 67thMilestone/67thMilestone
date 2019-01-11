@@ -1,0 +1,116 @@
+.position{
+    position: relative;
+    left: -2%;
+    color: #000000;
+    top: 5vh;
+}
+.position1{
+    position: relative;
+    left: 18%;
+    color: #000000;
+    top: 5vh;
+}
+p{
+    color:#000000;
+    text-align: justify;
+    display: inline-block;
+    font-size: 17px;
+    margin-top:7vh;
+}
+body{
+    background: white;
+}
+h2{
+    font-weight: bolder;
+    text-align: justify;
+    display: inline-block;
+      font-family: "PlayfairDisplay-Bold.ttf";
+      text-transform: lowercase;
+}
+.movement{
+    scroll-behavior: smooth;
+}
+.fixedSize{
+    width: 74vh;
+    height: 67vh;
+    display: inline-block;
+}
+.sideMargin{
+    margin-left:40vh;
+}
+.registerLink{
+    position: absolute;
+    top: 64vh;
+    font-weight: bold;
+    color: gray;
+}
+.carousel-inner>.item{
+        transition-property: opacity;
+        opacity: 1;
+        animation-delay: 0.8ms;
+}
+
+
+
+
+
+@media only screen and (max-width:450px){
+    .sideMargin{
+        margin-left: 85px;
+    }
+    .fixedSize{
+        width: 85%;
+        height: 590px;
+    }
+    p{
+        color:#000000;
+        text-align: justify;
+        display: inline-block;
+        font-size: 11.5px;
+        margin-top:2vh;
+    }
+    .position{
+        position: relative;
+        left: -3%;
+        color: #000000;
+        top: -2vh;
+    }
+    .position1{
+        position: relative;
+        left: 13%;
+        color: #000000;
+        top: -2vh;
+    }
+    .registerLink{
+        position: absolute;
+        top: 530px;
+    }
+    
+}
+@media only screen and (orientation:landscape) and (max-width:700px){
+    .position1{
+        left: 50%;
+    }
+    .position{
+        left: -3.5%;
+    }
+    .fixedSize{
+        width: 430px;
+        height: 300px;
+    }
+    p{
+        color:#000000;
+        text-align: justify;
+        display: inline-block;
+        font-size: 10px;
+        margin-top:1.5vh;
+    }
+    .registerLink{
+        position: absolute;
+        top: 273px;
+        font-weight: bold;
+        color: gray;
+        
+    }
+  }
+
