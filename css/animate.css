@@ -17,6 +17,7 @@ html {
 #scroller {
   height: 100vh;
   width: 98vw;
+  overflow: scroll !important;
 }
 
 html {

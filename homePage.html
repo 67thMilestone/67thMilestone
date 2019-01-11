@@ -266,6 +266,7 @@
     <script src="/js/main.js"></script>
     <script>
       function myFunction() {
+        $('.nav, .nav-dark').css('z-index','100');
         var x = document.getElementById("navbar");
         if (x.className === "nav") {
           x.className += " responsive";
