@@ -66,14 +66,12 @@
           <ul>
             <li>
               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <img
-                  onclick="icon()"
-                  id="test"
-                  src="assets/Hamburger.svg"
-                  height="45vh"
-                  width="45vw"
-                />
-              </a>
+                  <div class="edit-button">
+                      <img src="assets/Hamburger.svg" height="45vh" width="45vw">
+                      </div>
+                      <div class="ok-button">
+                      <img src="/cancel-music.svg" height="45vh" width="45vw" >
+                      </div>              </a>
             </li>
           </ul>
         </div>
@@ -153,7 +151,14 @@
         }
       }
     </script>
+<script>
+$('.ok-button').hide();
 
+$('.edit-button,.ok-button').on('click',function(){
+
+  $('.edit-button,.ok-button').toggle()
+});
+</script>
     <script type="text/javascript">
       function Expand() {
         var dots = document.getElementById("dots");

@@ -37,9 +37,6 @@
     margin-right: 30vw;
     margin-bottom: 10vh;
   }
-  .navbar {
-    width: 10vw;
-  }
   .top-left {
     font-size: 15px;
   }
@@ -169,6 +166,10 @@
   .right_float{
     float:left;
     margin-top:0vh;
+  }
+
+  #navbar{
+    z-index: 101;
   }
   li .active {
     font-size: 27px;

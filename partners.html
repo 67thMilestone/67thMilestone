@@ -29,14 +29,7 @@
     <div class="white-wipe"></div>
   </div>
   <div class="Wipe"></div>
-<<<<<<< HEAD
   
-=======
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <img id="test" src="assets/Hamburger.svg" height="45vh" width="45vw"></i>
-  </a>
-  <div id="scroller">
->>>>>>> 3e94e68c3e283420a1c70a6499535f3ca7bf0649
     <nav id="navbar" class="nav">
       <div class="topleft-text">
         <ul>
@@ -64,19 +57,17 @@
         </ul>
       </div>
       <div class="bottomleft-text bottommost">
-<<<<<<< HEAD
         
         <ul>
           <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <img onclick="icon()" id="test" src="assets/Hamburger.svg" height="45vh" width="45vw"></i>
-            </a>
+              <div class="edit-button">
+                  <img src="assets/Hamburger.svg" height="45vh" width="45vw">
+                  </div>
+                  <div class="ok-button">
+                  <img src="/cancel-music.svg" height="45vh" width="45vw" >
+                  </div>       
+                          </a>
           </li>
-=======
-        <ul class="bottomleft">
-          <li><a id="nav_sig" href="#signature">signature</a> </li>
-          <li><a id="nav_pre" href="#premier">premium</a> </li>
-          <li><a id="nav_cla" href="#classic">classic</a> </li>
->>>>>>> 3e94e68c3e283420a1c70a6499535f3ca7bf0649
         </ul>
       </div>
     </nav>
@@ -347,7 +338,14 @@
       }
     }
   </script>
-
+<script>
+    $('.ok-button').hide();
+    
+    $('.edit-button,.ok-button').on('click',function(){
+    
+      $('.edit-button,.ok-button').toggle()
+    });
+    </script>
   <script type="text/javascript">
     function nextExpand() {
       var dots = document.getElementById("dots1");
