@@ -22,11 +22,11 @@
 .rewind_2018 {
   margin-top: 40vh;
 }
-/* change the beginning image classes to img2 */
+ change the beginning image classes to img2 
 .img2 {
   margin-top: 0vh;
 }
-.img3 {
+.rewind_2018 .img {
   margin-top: 0vh;
 }
 
@@ -166,6 +166,10 @@
   .bottomleft-text-dark a:hover {
     font-size: 25px;
   }
+  .right_float{
+    float:left;
+    margin-top:0vh;
+  }
   li .active {
     font-size: 27px;
   }
@@ -201,7 +205,7 @@
   /* image dimensions for all the sizes */
   /* should not be changed */
   .img,
-  img2 {
+  .img2 {
     /* dont change the width since its directly corresponding to the main class */
     width: 100%;
     /* adjust it if u want */
@@ -327,7 +331,7 @@
     margin-bottom: -4vh;
   }
   .img,
-  img2 {
+  .img2 {
     margin-top: 5vh;
   }
   .text-below-image {
@@ -356,7 +360,7 @@
     margin-bottom: -4vh;
   }
   .img,
-  img2 {
+  .img2 {
     margin-top: 5vh;
   }
   .text-below-image {
@@ -377,7 +381,7 @@
     margin-bottom: -6vh;
   }
   .img,
-  img2 {
+  .img2 {
     margin-top: 5vh;
   }
   .text-below-image {
