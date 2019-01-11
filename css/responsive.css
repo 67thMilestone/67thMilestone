@@ -30,7 +30,15 @@ change the beginning image classes to img2 .img2 {
 .rewind_2018 .img {
   margin-top: 0vh;
 }
-
+#fine_dine {
+  margin-top: 20vh;
+}
+.subheading {
+  margin-top: 7vh;
+}
+#casual_dine {
+  margin-top: 30vh;
+}
 @media screen and (min-width: 601px) {
   /* do not change anything is this */
   main {
