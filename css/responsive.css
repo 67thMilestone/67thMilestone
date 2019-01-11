@@ -50,8 +50,13 @@
   li .active {
     font-size: 18px;
   }
+  .z-index{
+    z-index: 100;
+    position: fixed;
+  }
   .bottommost {
-    margin-top: 13vh;
+    margin-top: 75vh;
+    position: fixed;
   }
   .head,
   .head-dark {
