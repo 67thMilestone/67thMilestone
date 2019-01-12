@@ -90,10 +90,6 @@ change the beginning image classes to img2 .img2 {
     margin-bottom: 5vh;
   }
 
-  .img {
-    /* padding-top: 1vh; */
-  }
-
   .description-text-above-image {
     font-size: 1.5vh;
     margin-top: -4vh;
@@ -179,6 +175,8 @@ change the beginning image classes to img2 .img2 {
 
   #navbar {
     z-index: 101;
+    /* remove this to make the navbar click */
+    pointer-events: none;
   }
   li .active {
     font-size: 27px;
